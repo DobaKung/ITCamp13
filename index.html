@@ -4,12 +4,12 @@
         <title>IT CAMP 13</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta charset="utf-8">
-        <link rel="stylesheet" href="css/basscss.min.css" type="text/css"/>
+        <link rel="stylesheet" href="css/flexboxgrid.css" type="text/css"/>
         <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
         <link rel="stylesheet" href="css/custom.css" type="text/css"/>
     </head>
-    <body>
-        <header class="navbar">
+	<body>
+		<header class="navbar">
             <a href="#" class="navbar__icon" id="navbar__icon"></a>
             <a href="#" class="navbar__logo">
                 <img src="img/nav-logo-black.png" />
@@ -20,13 +20,19 @@
                 <a href="#">กำหนดการ</a>
                 <a href="#">ติดต่อ</a>
             </nav>
-        </header>
-        <div class="fullscreen hero">
-            <div class="clearfix">
-                <div class="mx-auto">
-                    <img src="img/skull.png"/>
-                </div>
-            </div>
+		</header>
+        <div class="fullscreen hero row center-xs middle-xs">
+			<div class="col-xs-4">
+				<img src="img/skull.png"/>
+				<div class="row cta-group">
+					<div class="col-sm-12 col-md-6">
+						<a href="#" class="btn btn-full">ลงทะเบียน</a>
+					</div>
+					<div class="col-sm-12 col-md-6">
+						<a href="#" class="btn btn-full">ลงทะเบียน</a>
+					</div>
+				</div>
+			</div>
         </div>
     </body>
 </html>
