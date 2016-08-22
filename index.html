@@ -15,7 +15,11 @@
                 <img src="img/nav-logo-black.png" />
             </a>
             <nav class="menu">
-                <a href="#" class="navborder">ค่ายย่อย</a>
+                <a href="javascript:void(0)" class="navborder" onclick="myFunction()">ค่ายย่อย</a>
+                <div class="navborder-content" id="myDropdown">
+                    <a href="#">kuy rai zartre</a>
+                    <a href="#">kuy rai zartre</a>
+                </div>
                 <a href="#">หน้าแรก</a>
                 <a href="#">กำหนดการ</a>
                 <a href="#">ติดต่อ</a>
@@ -34,5 +38,26 @@
 				</div>
 			</div>
         </div>
+        <script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.navborder')) {
+
+    var dropdowns = document.getElementsByClassName("navborder-content");
+    for (var d = 0; d < dropdowns.length; d++) {
+      var openDropdown = dropdowns[d];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
     </body>
 </html>
