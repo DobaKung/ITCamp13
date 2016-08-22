@@ -13,6 +13,21 @@ html, body {
 		url('../fonts/Block.woff') format('woff'),
 		url('../fonts/Block.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'th_chakra_petch';
+    src: url('../fonts/th_chakra_petch.eot');
+    src: url('../fonts/th_chakra_petch.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/th_chakra_petch.woff2') format('woff2'),
+         url('../fonts/th_chakra_petch.woff') format('woff'),
+         url('../fonts/th_chakra_petch.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p {
+	font-size: 1.6em;
+	font-family: "th_chakra_petch", sans-serif;
+}
 
 /* NAVBAR */
 
@@ -75,6 +90,10 @@ html, body {
 }
 .cta-group {
 	margin-top: 30px;
+}
+.camp-stories {
+	background: #000;
+	color: #fff;
 }
 
 /* BUTTONS */
