@@ -15,23 +15,23 @@
                 <img src="img/nav-logo-black.png" />
             </a>
             <nav class="menu">
-                <a href="javascript:void(0)" class="navborder" onclick="myFunction()">ค่ายย่อย</a>
-                <div class="navborder-content" id="myDropdown">
+                <a href="javascript:void(0)" class="dropdown-trigger" onclick="myFunction()">ค่ายย่อย</a>
+                <div class="dropdown-content" id="myDropdown">
                     <div class="row center-xs middle-xs">
                         <div class="col-xs">
-                            <a href="#" class="btn-full" ><img src="img/skull.png"  width=10%/></a>
+                            <a href="#" class="btn-full"><img src="img/circle.svg" /></a>
                         </div>
                         <div class="col-xs">
-                            <a href="#" class="btn-full"><img src="img/skull.png" width=10%/></a>
+                            <a href="#" class="btn-full"><img src="img/circle.svg"/></a>
                         </div>
                         <div class="col-xs">
-                            <a href="#" class="btn-full"><img src="img/skull.png" width=10%/></a>
+                            <a href="#" class="btn-full"><img src="img/circle.svg"/></a>
                         </div>
                         <div class="col-xs">
-                            <a href="#" class="btn-full"><img src="img/skull.png" width=10%/></a>
+                            <a href="#" class="btn-full"><img src="img/circle.svg"/></a>
                         </div>
                         <div class="col-xs">
-                            <a href="#" class="btn-full"><img src="img/skull.png" width=10%/></a>
+                            <a href="#" class="btn-full"><img src="img/circle.svg"/></a>
                         </div>
                     
                     </div>
@@ -61,15 +61,15 @@
         </div>
         <script>
             function myFunction() {
-                document.getElementById("myDropdown").classList.toggle("show");
+                document.getElementById("myDropdown").classList.toggle("downshow");
             }
             window.onclick = function(e) {
-                if (!e.target.matches('.navborder')) {
-                    var dropdowns = document.getElementsByClassName("navborder-content");
+                if (!e.target.matches('.dropdown-trigger')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
                     for (var d = 0; d < dropdowns.length; d++) {
                         var openDropdown = dropdowns[d];
-                        if (openDropdown.classList.contains('show')) {
-                            openDropdown.classList.remove('show');
+                        if (openDropdown.classList.contains('downshow')) {
+                            openDropdown.classList.remove('downshow');
                         }
                     }
                 }
@@ -92,6 +92,7 @@
 
                 if (scrolled > scroll){
                   $('.navbar').removeClass('show');
+                    $('.dropdown-content').removeClass('downshow');
                 } else {
                   $('.navbar').addClass('show');
                 }
