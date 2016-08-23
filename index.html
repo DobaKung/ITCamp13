@@ -15,7 +15,17 @@
                 <img src="img/nav-logo-black.png" />
             </a>
             <nav class="menu">
-                <a href="#" class="navborder">ค่ายย่อย</a>
+                <a href="javascript:void(0)" class="navborder" onclick="myFunction()">ค่ายย่อย</a>
+                <div class="navborder-content" id="myDropdown">
+                    <div class="row cta-group">
+                        <div class="col-sm-12 col-md-3">
+                            <a href="#" class="btn btn-full">ลงทะเบียน</a>
+                        </div>
+                        <div class="col-sm-12 col-md-3">
+                            <a href="#" class="btn btn-full">ลงทะเบียน</a>
+                        </div>
+                    </div>
+                </div>
                 <a href="#">หน้าแรก</a>
                 <a href="#">กำหนดการ</a>
                 <a href="#">ติดต่อ</a>
@@ -39,5 +49,21 @@
         		<p>เมื่อเหล่าพี่เลี้ยงประจำผู้พิทักษ์ทั้งสี่องค์กรลับไอทีแคมป์ ได้ค้นพบความจริงที่น่าตกใจว่าค่ายอันสงบสุขของพวกเขาได้ถูกผู้ก่อการกบฎปล่อยไวรัสเข้ามาทำลายระบบความปลอดภัยจนเสียหาย เหล่าพี่เลี้ยงจึงต้องออกตามหาเหล่าผู้พิทักษ์ Appersky ปรมาจารย์แห่งแอพพลิเคชั่น, Gameroft ผู้พัฒนาแห่งเกม, NetworkDefender ผู้พิทักษ์แห่งเครือข่าย และ IOTech ผู้สร้างอุปกรณ์ล้ำสมัย มาผนึกกำลังกันเพื่อตามหาผู้ก่อการกบฎนี้ มาร่วมเป็นส่วนหนึ่งของสุดยอดผู้พิทักษ์องค์กรเพื่อหยุดยั้งการทำลายล้างได้ที่ ITCAMP_13</p>
         	</div>
         </div>
+        <script>
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+            window.onclick = function(e) {
+                if (!e.target.matches('.navborder')) {
+                    var dropdowns = document.getElementsByClassName("navborder-content");
+                    for (var d = 0; d < dropdowns.length; d++) {
+                        var openDropdown = dropdowns[d];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+        </script>
     </body>
 </html>
