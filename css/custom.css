@@ -33,13 +33,24 @@ p {
 
 .navbar {
     position: fixed;
+    top : 0;
     left: 0;
     right: 0;
     height: 66px;
     line-height: 66px;
     color: #000;
-	letter-spacing: 2px;
-	font-size: 22px;
+	  letter-spacing: 2px;
+	  font-size: 22px;
+    -webkit-transition: top 0.6s;
+    -moz-transition: top 0.6s;
+    transition: top 0.6s;
+}
+.navbar.hide {
+    top : -66px;
+}
+.navbar.show {
+    top : 0;
+    z-index: 10
 }
 .navbar__logo {
     font-weight: 700;
