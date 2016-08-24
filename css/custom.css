@@ -84,6 +84,24 @@ p {
     background-color: #fff;
     min-width: 100%;
     box-shadow: 0px 15px 16px 0px rgba(0, 0, 0, 0.04);
+    animation-name: sildedown;
+    animation-duration: 0.8s;
+}
+@-webkit-keyframes sildedown {
+    from {height:0;}
+    to {height:250px;}
+}
+@keyframes sildedown{
+    from {height:0;}
+    to {height:250px;}
+}
+@-webkit-keyframes sildedown2 {
+    from {height:0;}
+    to {height:200px;}
+}
+@keyframes sildedown2{
+    from {height:0;}
+    to {height:200px;}
 }
 .dropdown-content a {
     color: black;
@@ -96,10 +114,14 @@ p {
 .dropdown-content a img {
     margin: 0 auto;
     width: 200px;
+    animation-name: sildedown2;
+    animation-duration: 0.8s;
 }
 .downshow {
     display: block;
+    
 }
+
 
 /* DIVS */
 
