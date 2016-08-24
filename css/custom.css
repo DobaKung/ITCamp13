@@ -127,6 +127,7 @@ p {
 }
 .camp-stories {
 	background: #000;
+    background-image: url(../img/dotted-bg.jpg);
 	color: #fff;
 }
 
