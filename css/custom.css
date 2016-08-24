@@ -73,31 +73,33 @@ p {
 .menu a:hover {
     color: #484848;
 }
-.navborder {
+.dropdown-trigger {
     border-right: 2px solid #000;
     padding-right: 15px !important;
 }
-.navborder-content {
+.dropdown-content {
     display: none;
     left: 0px;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #fff;
     min-width: 100%;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 15px 16px 0px rgba(0, 0, 0, 0.04);
 }
-.navborder-content a {
+.dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: center;
 }
-.navborder-content a:hover {background-color: #f1f1f1}
-.navborder-content a img {
+.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a img {
     margin: 0 auto;
     width: 200px;
 }
-.show {display:block;}
+.downshow {
+    display: block;
+}
 
 /* DIVS */
 
