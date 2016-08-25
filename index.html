@@ -33,7 +33,7 @@
                         <div class="col-xs">
                             <a href="#" class="btn-full"><img src="img/circle.svg"/></a>
                         </div>
-                    
+
                     </div>
                 </div>
                 <a href="#">หน้าแรก</a>
@@ -59,48 +59,9 @@
         		<p>เมื่อเหล่าพี่เลี้ยงประจำผู้พิทักษ์ทั้งสี่องค์กรลับไอทีแคมป์ ได้ค้นพบความจริงที่น่าตกใจว่าค่ายอันสงบสุขของพวกเขาได้ถูกผู้ก่อการกบฎปล่อยไวรัสเข้ามาทำลายระบบความปลอดภัยจนเสียหาย เหล่าพี่เลี้ยงจึงต้องออกตามหาเหล่าผู้พิทักษ์ Appersky ปรมาจารย์แห่งแอพพลิเคชั่น, Gameroft ผู้พัฒนาแห่งเกม, NetworkDefender ผู้พิทักษ์แห่งเครือข่าย และ IOTech ผู้สร้างอุปกรณ์ล้ำสมัย มาผนึกกำลังกันเพื่อตามหาผู้ก่อการกบฎนี้ มาร่วมเป็นส่วนหนึ่งของสุดยอดผู้พิทักษ์องค์กรเพื่อหยุดยั้งการทำลายล้างได้ที่ ITCAMP_13</p>
         	</div>
         </div>
-        <script>
-            function myFunction() {
-                document.getElementById("myDropdown").classList.toggle("downshow");
-            }
-            window.onclick = function(e) {
-                if (!e.target.matches('.dropdown-trigger')) {
-                    var dropdowns = document.getElementsByClassName("dropdown-content");
-                    for (var d = 0; d < dropdowns.length; d++) {
-                        var openDropdown = dropdowns[d];
-                        if (openDropdown.classList.contains('downshow')) {
-                            openDropdown.classList.remove('downshow');
-                        }
-                    }
-                }
-            }
-        </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-        <script>
-          (function($){
-            $(function(){
-              var scroll = $(document).scrollTop();
-              var headerHeight = $('.navbar').outerHeight();
-
-              $(window).scroll(function() {
-                var scrolled = $(document).scrollTop();
-                if (scrolled > headerHeight){
-                  $('.navbar').addClass('hide');
-                } else {
-                  $('.navbar').removeClass('hide');
-                }
-
-                if (scrolled > scroll){
-                  $('.navbar').removeClass('show');
-                    $('.dropdown-content').removeClass('downshow');
-                } else {
-                  $('.navbar').addClass('show');
-                }
-                scroll = $(document).scrollTop();
-              });
-
-            });
-          })(jQuery);
-        </script>
+        <script src="js\autohide_nav.js"></script>
+        <script src="js\camp_trigger.js"></script>
+        <script src="js\nav_bg.js"></script>
     </body>
 </html>
