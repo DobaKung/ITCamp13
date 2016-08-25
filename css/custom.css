@@ -71,6 +71,10 @@ h1.reg-title {
     top : 0;
     z-index: 10;
 }
+.navbar.bg {
+  background-color: #fff;
+  transition: 0.6s;
+}
 .navbar__logo {
     font-weight: 700;
     margin-left: 28px;
@@ -138,7 +142,7 @@ h1.reg-title {
 }
 .downshow {
     display: block;
-    
+
 }
 
 
