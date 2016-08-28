@@ -276,6 +276,16 @@ input[type="text"]:focus {
         max-width: 900px;
     }
 }
+@media screen and (max-width: 1126px) {
+    @-webkit-keyframes sildedown {
+        from {height:0;}
+        to {height:500px;}
+    }
+    @keyframes sildedown{
+        from {height:0;}
+        to {height:500px;}
+    }
+}
 @media screen and (max-width: 768px) {
     .container {
         width: 100%;
