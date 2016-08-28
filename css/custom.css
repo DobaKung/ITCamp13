@@ -340,6 +340,9 @@ input[type="text"]:focus {
 }
 @media screen and (max-width: 360px) {
     p {
-        font-size: 24px;
+        font-size: 22px;
     }
+	.hero img {
+		max-width: 140px;
+	}
 }
