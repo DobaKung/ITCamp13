@@ -112,23 +112,22 @@ h1.reg-title {
 }
 @-webkit-keyframes sildedown {
     from {height:0;}
-    to {height:250px;}
+    to {height:207px;}
 }
-@keyframes sildedown{
+@keyframes sildedown {
     from {height:0;}
-    to {height:250px;}
+    to {height:207px;}
 }
 @-webkit-keyframes sildedown2 {
     from {height:0;}
-    to {height:200px;}
+    to {height:160px;}
 }
-@keyframes sildedown2{
+@keyframes sildedown2 {
     from {height:0;}
-    to {height:200px;}
+    to {height:160px;}
 }
 .dropdown-content a {
     color: black;
-    padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: center;
@@ -136,7 +135,7 @@ h1.reg-title {
 .dropdown-content a:hover {background-color: #f1f1f1}
 .dropdown-content a img {
     margin: 0 auto;
-    width: 200px;
+    width: 160px;
     animation-name: sildedown2;
     animation-duration: 0.8s;
 }
@@ -275,6 +274,25 @@ input[type="text"]:focus {
         width: 100%;
         max-width: 900px;
     }
+    .dropdown-content a img {
+        width: 125px;
+    }
+    @-webkit-keyframes sildedown {
+        from {height:0;}
+        to {height:172px;}
+    }
+    @keyframes sildedown {
+        from {height:0;}
+        to {height:172px;}
+    }
+    @-webkit-keyframes sildedown2 {
+        from {height:0;}
+        to {height:125px;}
+    }
+    @keyframes sildedown2 {
+        from {height:0;}
+        to {height:125px;}
+    }
 }
 @media screen and (max-width: 768px) {
     .container {
@@ -288,6 +306,27 @@ input[type="text"]:focus {
     }
     p {
         font-size: 26px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .dropdown-content a img {
+        width: 120px;
+    }
+    @-webkit-keyframes sildedown {
+        from {height:0;}
+        to {height:167px;}
+    }
+    @keyframes sildedown {
+        from {height:0;}
+        to {height:167px;}
+    }
+    @-webkit-keyframes sildedown2 {
+        from {height:0;}
+        to {height:120px;}
+    }
+    @keyframes sildedown2 {
+        from {height:0;}
+        to {height:120px;}
     }
 }
 @media screen and (max-width: 480px) {
