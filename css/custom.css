@@ -25,7 +25,7 @@ html, body {
 }
 
 p {
-	font-size: 1.6em;
+	font-size: 32px;
 	font-family: "th_chakra_petch", sans-serif;
 }
 h1.reg-title {
@@ -142,9 +142,7 @@ h1.reg-title {
 }
 .downshow {
     display: block;
-
 }
-
 
 /* DIVS */
 
@@ -282,5 +280,23 @@ input[type="text"]:focus {
     .container {
         width: 100%;
     }
+    .navbar {
+        display: none;
+    }
+    .hero img {
+        max-width: 200px;
+    }
+    p {
+        font-size: 26px;
+    }
 }
-@media screen and (max-width: 360px) {}
+@media screen and (max-width: 480px) {
+    p {
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 360px) {
+    p {
+        font-size: 24px;
+    }
+}
