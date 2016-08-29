@@ -47,6 +47,9 @@ h1.reg-title {
 .reg-bg h4 {
     margin: 5px 0 7px 0;
 }
+span.remark {
+	color: red;
+}
 
 /* NAVBAR */
 
