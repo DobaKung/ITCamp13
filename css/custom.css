@@ -238,10 +238,6 @@ button.faq-box p {
     animation-name: faq-down;
     animation-duration: 0.3s;
 }
-button.faq-box.expanded {
-    background: #f5f5f5;
-    border-left: 15px solid #203db7;
-}
 @keyframes faq-down {
     from {transform: translateY(-15px);}
     to {transform: translateY(0px);}
