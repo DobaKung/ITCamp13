@@ -220,6 +220,7 @@ button.faq-box:hover {
 	border-left: 15px solid #203db7;
     background: #fff;
     color: #000;
+    cursor: pointer;
 }
 button.faq-box p {
 	margin: 5px 0 0 0;
