@@ -232,6 +232,7 @@ button.faq-box p {
 }
 .faq-detail p {
     margin: 5px 0 0 0;
+    font-size: 1.5rem;
 }
 .faq-detail.show {
     display: block;
@@ -398,4 +399,7 @@ input[type="text"]:focus {
 	.hero img {
 		max-width: 140px;
 	}
+    .faq-detail p {
+        font-size: 1.3rem;
+    }
 }
