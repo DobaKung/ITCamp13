@@ -193,11 +193,18 @@ span.remark {
     margin-bottom: 30px;
 }
 
+/* SUBCAMPS */
+
+iframe.subcamps {
+    border: none;
+    margin: 0 0 -4px 0;
+}
+
 /* FAQ */
 
 .faq {
 	background: #66aaee;
-	padding: 20px 0;
+	padding: 20px 5px;
 }
 .faq h1 {
 	text-align: center;
