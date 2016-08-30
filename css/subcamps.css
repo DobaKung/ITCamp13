@@ -187,10 +187,19 @@ body {
     transition: all .5s 1.4s;
 }
 
-.el__text {
+.el__title {
     text-transform: uppercase;
     font-size: 40px;
+    font-weight: bold;
     color: #fff;
+    margin-bottom: 20px;
+}
+
+.el__text {
+    font-size: 18px;
+    font-family: "th_chakra_petch", sans-serif;
+    color: #fff;
+    max-width: 800px;
 }
 
 .el__close-btn {
@@ -287,7 +296,7 @@ body {
 .el:nth-child(1) .el__bg:before {
     -webkit-transition-delay: 0;
     transition-delay: 0;
-    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-3.jpg);
+    background-image: url('../img/subcamp-placehldr.png');
 }
 
 .el:nth-child(2) {
@@ -320,7 +329,7 @@ body {
 .el:nth-child(2) .el__bg:before {
     -webkit-transition-delay: .1s;
     transition-delay: .1s;
-    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-4.jpg);
+    background-image: url('../img/subcamp-placehldr.png');
 }
 
 .el:nth-child(3) {
@@ -353,7 +362,7 @@ body {
 .el:nth-child(3) .el__bg:before {
     -webkit-transition-delay: .2s;
     transition-delay: .2s;
-    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-5.jpg);
+    background-image: url('../img/subcamp-placehldr.png');
 }
 
 .el:nth-child(4) {
@@ -386,7 +395,7 @@ body {
 .el:nth-child(4) .el__bg:before {
     -webkit-transition-delay: .3s;
     transition-delay: .3s;
-    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-6.jpg);
+    background-image: url('../img/subcamp-placehldr.png');
 }
 
 .el:nth-child(5) {
@@ -419,7 +428,7 @@ body {
 .el:nth-child(5) .el__bg:before {
     -webkit-transition-delay: .4s;
     transition-delay: .4s;
-    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-7.jpg);
+    background-image: url('../img/subcamp-placehldr.png');
 }
 
 .el:hover .el__bg:after {
@@ -451,21 +460,4 @@ body {
     transition-delay: .6s;
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-}
-
-.icon-link {
-    position: absolute;
-    left: 5px;
-    bottom: 5px;
-    width: 32px;
-}
-
-.icon-link img {
-    width: 100%;
-    vertical-align: top;
-}
-
-.icon-link--twitter {
-    left: auto;
-    right: 5px;
 }
