@@ -338,7 +338,7 @@ input[type="text"]:focus {
 
 .grid {
   background: #EEE;
-  max-width: 1200px;
+  max-width: 100%;
   position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -354,8 +354,8 @@ input[type="text"]:focus {
 
 
 .grid-item img {
-  width: 160px;
-  height: 120px;
+  width: 480px;
+  height: 450px;
   float: left;
   border: 2px solid #333;
   border-color: hsla(0, 0%, 0%, 0.5);
@@ -363,11 +363,11 @@ input[type="text"]:focus {
   opacity: 0.8;
 }
 
-.grid-item--width2 img { width: 320px; }
+.grid-item--width2 img { width: 600px; }
 .grid-item--width3 img{ width: 480px; }
 .grid-item--width4 img{ width: 640px; }
 
-.grid-item--height2 img{ height: 200px; }
+.grid-item--height2 img{ height: 900px; }
 .grid-item--height3 img{ height: 260px; }
 .grid-item--height4 img{ height: 360px; }
 
