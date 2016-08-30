@@ -332,6 +332,56 @@ input[type="text"]:focus {
   }
 }
 
+/* Masonry */
+
+
+
+.grid {
+  background: #EEE;
+  max-width: 1200px;
+  position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+
+.grid-item img {
+  width: 160px;
+  height: 120px;
+  float: left;
+  border: 2px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.5);
+  border-radius: 5px;
+  opacity: 0.8;
+}
+
+.grid-item--width2 img { width: 320px; }
+.grid-item--width3 img{ width: 480px; }
+.grid-item--width4 img{ width: 640px; }
+
+.grid-item--height2 img{ height: 200px; }
+.grid-item--height3 img{ height: 260px; }
+.grid-item--height4 img{ height: 360px; }
+
+.stamp {
+  position: absolute;
+  left: 10%;
+  top: 50px;
+  width: 10%;
+  height: 10px;
+  background: #EEEEEE;
+  border: 1px dotted #EEEEEE;
+}
+
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1199px) {
