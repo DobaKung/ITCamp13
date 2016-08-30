@@ -4,11 +4,6 @@
     padding: 0;
 }
 
-body {
-    background: #1f1f1f;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-}
-
 .cont {
     position: relative;
     overflow: hidden;
@@ -162,7 +157,7 @@ body {
 .el__heading {
     color: #fff;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 30px;
 }
 
 .el__content {
@@ -189,14 +184,14 @@ body {
 
 .el__title {
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
     color: #fff;
     margin-bottom: 20px;
 }
 
 .el__text {
-    font-size: 18px;
+    font-size: 28px;
     font-family: "th_chakra_petch", sans-serif;
     color: #fff;
     max-width: 800px;
