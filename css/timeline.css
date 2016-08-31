@@ -66,11 +66,10 @@ Modules - reusable parts of our design
 
 .cd-timeline-img {
   position: absolute;
-  top: 0;
+  top: 4px;
   left: 0;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
   box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 .cd-timeline-img img {
@@ -104,9 +103,8 @@ Modules - reusable parts of our design
   position: relative;
   margin-left: 60px;
   background: white;
-  border-radius: 0.25em;
   padding: 20px 20px 10px;
-  box-shadow: 0 3px 0 #d7e4ed;
+  box-shadow: 4px 4px 0 #05b7f7;
 }
 .cd-timeline-content:after {
   content: "";
