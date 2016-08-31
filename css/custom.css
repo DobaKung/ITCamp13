@@ -281,6 +281,14 @@ a.btn:hover, button.ghost {
     letter-spacing: 1px;
     border: 2px solid #fff;
 }
+footer a.btn {
+    color: #fff;
+    border: 2px solid #fff;
+}
+footer a.btn:hover {
+    background: #fff;
+    color: #000;
+}
 .center {
     margin-left: auto;
     margin-right: auto;
@@ -291,12 +299,12 @@ a.btn:hover, button.ghost {
 footer {
     background: #000;
     width: 100%;
-    padding: 38px 30px 20px;
+    padding: 38px 30px 30px;
     color: #fff;
     border-top: 4px dashed #fff;
 }
 .contact {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 /* FORMS */
