@@ -259,7 +259,7 @@ button.faq-box p {
 
 /* BUTTONS */
 
-a.btn {
+a.btn, button.ghost {
 	border: 2px solid #000;
     background: transparent;
 	padding: 12px 20px;
@@ -271,15 +271,23 @@ a.btn {
 	color: #000;
     transition: letter-spacing 0.2s, border 0.2s, background 0.2s;
 }
-a.btn-full {
+a.btn-full, button.ghost-full {
 	width: 100%;
 	padding: 12px 0;
 }
-a.btn:hover {
+a.btn:hover, button.ghost {
 	background: #000;
 	color: #fff;
     letter-spacing: 1px;
     border: 2px solid #fff;
+}
+footer a.btn {
+    color: #fff;
+    border: 2px solid #fff;
+}
+footer a.btn:hover {
+    background: #fff;
+    color: #000;
 }
 .center {
     margin-left: auto;
@@ -291,12 +299,12 @@ a.btn:hover {
 footer {
     background: #000;
     width: 100%;
-    padding: 38px 30px 20px;
+    padding: 38px 30px 30px;
     color: #fff;
     border-top: 4px dashed #fff;
 }
 .contact {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 /* FORMS */
