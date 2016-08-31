@@ -210,7 +210,7 @@ iframe.subcamps {
 	background: #66aaee;
 	padding: 50px 5px;
 }
-.faq h1 {
+.faq h1, footer h1 {
 	text-align: center;
 	font-size: 50px;
     margin-bottom: 30px;
@@ -284,6 +284,19 @@ a.btn:hover {
 .center {
     margin-left: auto;
     margin-right: auto;
+}
+
+/* FOOTER */
+
+footer {
+    background: #000;
+    width: 100%;
+    padding: 38px 30px 20px;
+    color: #fff;
+    border-top: 4px dashed #fff;
+}
+.contact {
+    margin-bottom: 20px;
 }
 
 /* FORMS */
