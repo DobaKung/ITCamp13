@@ -66,6 +66,7 @@ span.remark {
     -webkit-transition: top 0.6s;
     -moz-transition: top 0.6s;
     transition: top 0.6s;
+    z-index: 5;
 }
 .navbar.hide {
     top : -66px;
@@ -192,16 +193,27 @@ span.remark {
     padding: 15px 20px 25px 20px;
     margin-bottom: 30px;
 }
+.timeline {
+    background: #000;
+}
+
+/* SUBCAMPS */
+
+iframe.subcamps {
+    border: none;
+    margin: 0 0 -4px 0;
+}
 
 /* FAQ */
 
 .faq {
 	background: #66aaee;
-	padding: 20px 0;
+	padding: 50px 5px;
 }
-.faq h1 {
+.faq h1, footer h1 {
 	text-align: center;
 	font-size: 50px;
+    margin-bottom: 30px;
 }
 button.faq-box {
 	background: #fff;
@@ -213,13 +225,14 @@ button.faq-box {
     width: 100%;
     text-align: left;
     z-index: 2;
-    margin-top: 10px;
+    margin: 10px 0 0 0;
 }
 button.faq-box:hover {
     border: none;
 	border-left: 15px solid #203db7;
     background: #fff;
     color: #000;
+    cursor: pointer;
 }
 button.faq-box p {
 	margin: 5px 0 0 0;
@@ -232,6 +245,7 @@ button.faq-box p {
 }
 .faq-detail p {
     margin: 5px 0 0 0;
+    font-size: 1.5rem;
 }
 .faq-detail.show {
     display: block;
@@ -270,6 +284,19 @@ a.btn:hover {
 .center {
     margin-left: auto;
     margin-right: auto;
+}
+
+/* FOOTER */
+
+footer {
+    background: #000;
+    width: 100%;
+    padding: 38px 30px 20px;
+    color: #fff;
+    border-top: 4px dashed #fff;
+}
+.contact {
+    margin-bottom: 20px;
 }
 
 /* FORMS */
@@ -320,6 +347,56 @@ input[type="text"]:focus {
     transform: translate3d(4px, 2px, 0);
   }
 }
+
+/* Masonry */
+
+
+
+.grid {
+  background: #EEE;
+  max-width: 100%;
+  position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+
+.grid-item img {
+  width: 480px;
+  height: 450px;
+  float: left;
+  border: 2px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.5);
+  border-radius: 5px;
+  opacity: 0.8;
+}
+
+.grid-item--width2 img { width: 600px; }
+.grid-item--width3 img{ width: 480px; }
+.grid-item--width4 img{ width: 640px; }
+
+.grid-item--height2 img{ height: 900px; }
+.grid-item--height3 img{ height: 260px; }
+.grid-item--height4 img{ height: 360px; }
+
+.stamp {
+  position: absolute;
+  left: 10%;
+  top: 50px;
+  width: 10%;
+  height: 10px;
+  background: #EEEEEE;
+  border: 1px dotted #EEEEEE;
+}
+
 
 /* MEDIA QUERIES */
 
@@ -398,4 +475,7 @@ input[type="text"]:focus {
 	.hero img {
 		max-width: 140px;
 	}
+    .faq-detail p {
+        font-size: 1.3rem;
+    }
 }
