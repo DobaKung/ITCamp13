@@ -68,7 +68,7 @@
                         </div>
                         <div class="col-xs-8 col-md-4 forminput">
                             <label for="idcard">เลขประจำตัวประชาชน</label>
-                            <input type="text" name="idcard">
+                            <input type="number" maxlength="13" name="idcard">
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4 forminput">
                             <label for="facebook">เฟซบุ๊ก</label>
@@ -113,7 +113,7 @@
                         </div>
                         <div class="col-xs-6 col-sm-4 col-md-3 forminput">
                             <label for="addr-email">อีเมล</label>
-                            <input type="text" name="addr-email">
+                            <input type="email" name="addr-email">
                         </div>
                     </div>
                     <div class="row">
@@ -284,6 +284,10 @@
                                 <input type="radio" name="etc-shirt" value="xxl"> XXL
                                 <input type="radio" name="etc-shirt" value="xxxl"> XXXL
                             </fieldset>
+                        </div>
+                        <div class="col-xs-12 forminput">
+                        	<label for="longtext">ข้อความยาว</label>
+                        	<textarea name="longtext"></textarea>
                         </div>
                     </div>
                     <div class="row">
