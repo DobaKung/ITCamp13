@@ -297,8 +297,9 @@ footer a.btn:hover {
 
 /* FORMS */
 
-input, select {
+input, select, textarea {
     width: 100%;
+	font-family: "Sukhumvit Set", -apple-system-font, sans-serif;
 }
 label {
     margin-top: 12px;
@@ -306,13 +307,13 @@ label {
 .forminput {
     margin-bottom: 10px;
 }
-input[type="text"], input[type="date"] {
+input[type="text"], input[type="date"], input[type="email"], input[type="number"], textarea {
     border: none;
-    background: #f2f2f2;
+    background: #ebebeb;
     font-size: 1em;
     padding: 6px 4px;
 }
-input[type="text"]:focus, input[type="text"]:active, input[type="date"]:focus, input[type="date"]:active {
+input[type="text"]:focus, input[type="text"]:active, input[type="date"]:focus, input[type="date"]:active, input[type="email"]:focus, input[type="email"]:active, input[type="number"]:focus, input[type="number"]:active, textarea:focus, textarea:active {
     border-left: 2px solid #000;
     outline: none;
 }
@@ -320,7 +321,7 @@ select {
     font-size: 1em;
     padding: 3px 4px;
 }
-input[type="text"]:focus {
+input[type="text"]:focus, input[type="date"]:focus, input[type="email"]:focus, input[type="number"]:focus, textarea:focus {
   animation: shake 0.2s cubic-bezier(.36,.07,.19,.97) both;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
