@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link rel="stylesheet" href="../css/flexboxgrid.css" type="text/css"/>
         <link rel="stylesheet" href="../css/custom.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/pickadate.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/pickadate.date.css" type="text/css"/>
         <style>
             html, body {
                 background: url("../img/dotted-bg.jpg");
@@ -51,9 +53,9 @@
                         </div>
                         <div class="col-xs-6 col-sm-4 col-md-2 forminput">
                             <label for="birthday">วันเกิด</label>
-                            <input type="date" name="birthday">
+                            <input type="text" name="birthday" id="birthday">
                         </div>
-                        <div class="col-xs-6 col-sm-4 col-md-1 forminput">
+                        <div class="col-xs-6 col-sm-4 col-md-2 forminput">
                             <label for="gender">เพศ</label>
                             <select name="gender">
                                 <option>ชาย</option>
@@ -66,9 +68,9 @@
                         </div>
                         <div class="col-xs-8 col-md-4 forminput">
                             <label for="idcard">เลขประจำตัวประชาชน</label>
-                            <input type="text" name="idcard">
+                            <input type="number" maxlength="13" name="idcard">
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-5 forminput">
+                        <div class="col-xs-12 col-sm-6 col-md-4 forminput">
                             <label for="facebook">เฟซบุ๊ก</label>
                             <input type="text" name="facebook">
                         </div>
@@ -111,7 +113,7 @@
                         </div>
                         <div class="col-xs-6 col-sm-4 col-md-3 forminput">
                             <label for="addr-email">อีเมล</label>
-                            <input type="text" name="addr-email">
+                            <input type="email" name="addr-email">
                         </div>
                     </div>
                     <div class="row">
@@ -285,11 +287,24 @@
                         </div>
                     </div>
                     <div class="row">
-                        <button type="submit" class="btn center">ทำต่อ</button>
+                        <button type="submit" class="ghost center">ทำต่อ</button>
                     </div>
                 </form>
             </div>
             <div class="spacer"></div>
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="../js/picker.js" type="text/javascript"></script>
+        <script src="../js/picker.date.js" type="text/javascript"></script>
+        <script type="text/javascript">
+			$(document).ready(function(){
+				$('#birthday').pickadate({
+					selectYears: true,
+					selectMonths: true,
+					format: 'dd mmm yyyy',
+					formatSubmit: 'dd-mm-yyyy'
+				});
+			});
+		</script>
     </body>
 </html>
