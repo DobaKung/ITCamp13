@@ -73,7 +73,6 @@ span.remark {
 }
 .navbar.show {
     top : 0;
-    z-index: 10;
 }
 .navbar.bg {
   background-color: #fff;
@@ -103,32 +102,19 @@ span.remark {
 .dropdown-trigger {
     border-right: 2px solid #000;
     padding-right: 15px !important;
+    cursor: pointer;
 }
 .dropdown-content {
-    display: none;
+    display: block;
     left: 0px;
-    position: absolute;
+    top: -235px;
+    position: fixed;
     background-color: #fff;
     min-width: 100%;
     box-shadow: 0px 15px 16px 0px rgba(0, 0, 0, 0.04);
-    animation-name: sildedown;
-    animation-duration: 0.8s;
-}
-@-webkit-keyframes sildedown {
-    from {height:0;}
-    to {height:207px;}
-}
-@keyframes sildedown {
-    from {height:0;}
-    to {height:207px;}
-}
-@-webkit-keyframes sildedown2 {
-    from {height:0;}
-    to {height:160px;}
-}
-@keyframes sildedown2 {
-    from {height:0;}
-    to {height:160px;}
+    transition: 0.6s;
+    line-height: 66px;
+    z-index: 4;
 }
 .dropdown-content a {
     color: black;
@@ -148,7 +134,9 @@ span.remark {
     animation-duration: 0.8s;
 }
 .downshow {
-    display: block;
+    top: 0;
+    padding-top: 66px;
+
 }
 
 /* DIVS */
