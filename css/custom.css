@@ -263,7 +263,7 @@ a.btn-full, button.ghost-full {
 	width: 100%;
 	padding: 12px 0;
 }
-a.btn:hover, button.ghost {
+a.btn:hover, button.ghost:hover {
 	background: #000;
 	color: #fff;
     letter-spacing: 1px;
@@ -278,13 +278,13 @@ footer a.btn:hover {
     color: #000;
 }
 .center {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 /* FOOTER */
 
-footer {
+.footer {
     background: #000;
     width: 100%;
     padding: 38px 30px 30px;
