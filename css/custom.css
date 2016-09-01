@@ -269,11 +269,11 @@ a.btn:hover, button.ghost:hover {
     letter-spacing: 1px;
     border: 2px solid #fff;
 }
-footer a.btn {
+.footer a.btn {
     color: #fff;
     border: 2px solid #fff;
 }
-footer a.btn:hover {
+.footer a.btn:hover {
     background: #fff;
     color: #000;
 }
