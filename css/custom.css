@@ -191,6 +191,18 @@ iframe.subcamps {
     margin: 0 0 -4px 0;
 }
 
+/* GALLERY */
+
+.gallery {
+	padding-top: 55px;
+	padding-bottom: 40px;
+	background: #efefef;
+}
+.gallery img {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
 /* KAMNIYOM */
 
 .kamniyom {
@@ -327,9 +339,10 @@ a.btn:hover, button.ghost:hover {
 /* FOOTER */
 
 .footer {
-    background: #000;
+    background-color: #000;
+	background-image: url(../img/dotted-bg.jpg);
     width: 100%;
-    padding: 38px 30px 30px;
+    padding: 38px 30px;
     color: #fff;
     border-top: 4px dashed #efefef;
 }
@@ -387,46 +400,6 @@ input[type="text"]:focus, input[type="date"]:focus, input[type="email"]:focus, i
     transform: translate3d(4px, 2px, 0);
   }
 }
-
-/* Masonry */
-* { box-sizing: border-box; }
-
-body { font-family: sans-serif; }
-
-/* ---- grid ---- */
-
-.grid {
-  max-width: 1704px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* clearfix */
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-/* ---- grid-item ---- */
-
-.grid-item img{
-  width: 320px;
-    height: 120px;
-  border: 5px solid #333;
-  border-color: hsla(0, 0%, 0%, 0.5);
-  border-radius: 5px;
-    align-items: center;
-    margin: 12px;
-    float: left;
-}
-.grid-item--width2 img{ width: 640px; }
-.grid-item--width3 img{ width: 960px; }
-.grid-item--width4 img{ width: 640px; }
-
-.grid-item--height2 img{ height: 240px; }
-.grid-item--height3 img{ height: 480px; }
-.grid-item--height4 img{ height: 360px; }
 
 /* MEDIA QUERIES */
 
