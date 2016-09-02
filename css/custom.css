@@ -347,6 +347,7 @@ a.btn:hover, button.ghost:hover {
     border-top: 4px dashed #efefef;
 }
 .contact {
+	margin-top: 15px;
     margin-bottom: 30px;
 }
 
