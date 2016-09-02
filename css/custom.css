@@ -140,10 +140,10 @@ span.remark {
 
 /* DIVS */
 
-.container {
+/*.container {
     width: 1000px;
     margin: 0 auto;
-}
+}*/
 .fullscreen {
     /* a full-screen div */
     height:100%;
@@ -189,6 +189,61 @@ span.remark {
 iframe.subcamps {
     border: none;
     margin: 0 0 -4px 0;
+}
+
+/* GALLERY */
+
+.gallery {
+	padding-top: 55px;
+	padding-bottom: 40px;
+	background: #efefef;
+}
+.gallery img {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+/* KAMNIYOM */
+
+.kamniyom {
+	padding-top: 35px;
+}
+.kamniyom-box {
+	width: 90%;
+	max-width: 850px;
+	padding: 30px 15px;
+	margin-bottom: 35px;
+	color: #fff;
+	background-color: #080607;
+	background-color: -webkit-linear-gradient(top left,#080607,#272727);
+	background-color: -o-linear-gradient(top left,#080607,#272727);
+	background-color: -moz-linear-gradient(top left,#080607,#272727);
+	background-color: linear-gradient(top left, #080607, #272727);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	background-size: contain;
+	box-shadow: 10px 10px 0 #d6d6d6;
+	float: left;
+}
+.kamniyom-box:nth-child(even) {
+	float: right;
+}
+.kamniyom-box:nth-child(1) {
+	background-image: url(../img/avatar-1.png);
+}
+.kamniyom-box:nth-child(2) {
+	background-image: url(../img/avatar-1.png);
+}
+.kamniyom-box:nth-child(3) {
+	background-image: url(../img/avatar-1.png);
+}
+.kamniyom-text {
+	width: 100%;
+	max-width: 580px;
+}
+.kamniyom-text p.small {
+	font-size: 21px;
+	margin-top: 8px;
 }
 
 /* FAQ */
@@ -284,9 +339,10 @@ a.btn:hover, button.ghost:hover {
 /* FOOTER */
 
 .footer {
-    background: #000;
+    background-color: #000;
+	background-image: url(../img/dotted-bg.jpg);
     width: 100%;
-    padding: 38px 30px 30px;
+    padding: 38px 30px;
     color: #fff;
     border-top: 4px dashed #efefef;
 }
@@ -345,66 +401,16 @@ input[type="text"]:focus, input[type="date"]:focus, input[type="email"]:focus, i
   }
 }
 
-/* Masonry */
-
-
-
-.grid {
-  background: #EEE;
-  max-width: 100%;
-  position: relative;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* clearfix */
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-
-
-.grid-item img {
-  width: 480px;
-  height: 450px;
-  float: left;
-  border: 2px solid #333;
-  border-color: hsla(0, 0%, 0%, 0.5);
-  border-radius: 5px;
-  opacity: 0.8;
-}
-
-.grid-item--width2 img { width: 600px; }
-.grid-item--width3 img{ width: 480px; }
-.grid-item--width4 img{ width: 640px; }
-
-.grid-item--height2 img{ height: 900px; }
-.grid-item--height3 img{ height: 260px; }
-.grid-item--height4 img{ height: 360px; }
-
-.stamp {
-  position: absolute;
-  left: 10%;
-  top: 50px;
-  width: 10%;
-  height: 10px;
-  background: #EEEEEE;
-  border: 1px dotted #EEEEEE;
-}
-
-
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1199px) {
     .hero img {
         max-width: 250px;
     }
-    .container {
+    /*.container {
         width: 100%;
         max-width: 900px;
-    }
+    }*/
     .dropdown-content a img {
         width: 125px;
     }
@@ -426,9 +432,9 @@ input[type="text"]:focus, input[type="date"]:focus, input[type="email"]:focus, i
     }
 }
 @media screen and (max-width: 768px) {
-    .container {
+    /*.container {
         width: 100%;
-    }
+    }*/
     .navbar {
         display: none;
     }
@@ -438,6 +444,12 @@ input[type="text"]:focus, input[type="date"]:focus, input[type="email"]:focus, i
     p {
         font-size: 26px;
     }
+	.kamniyom-box, .kamniyom-box:nth-child(even) {
+		box-shadow: none;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 @media screen and (max-width: 1024px) {
     .dropdown-content a img {
@@ -460,10 +472,23 @@ input[type="text"]:focus, input[type="date"]:focus, input[type="email"]:focus, i
         to {height:120px;}
     }
 }
+@media screen and (max-width: 860px) {
+	.kamniyom-box {
+		min-height: 350px;
+		background-size: 200px auto;
+	}
+}
 @media screen and (max-width: 480px) {
     p {
         font-size: 24px;
     }
+	.kamniyom {
+		padding-bottom: 30px;
+	}
+	.kamniyom-box {
+		width: 100%;
+		margin-bottom: 15px;
+	}
 }
 @media screen and (max-width: 360px) {
     p {
@@ -475,4 +500,7 @@ input[type="text"]:focus, input[type="date"]:focus, input[type="email"]:focus, i
     .faq-detail p {
         font-size: 1.3rem;
     }
+	.kamniyom-box {
+		min-height: 410px;
+	}
 }
