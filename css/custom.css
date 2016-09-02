@@ -191,6 +191,49 @@ iframe.subcamps {
     margin: 0 0 -4px 0;
 }
 
+/* KAMNIYOM */
+
+.kamniyom {
+	padding-top: 35px;
+}
+.kamniyom-box {
+	width: 90%;
+	max-width: 850px;
+	padding: 30px 15px;
+	margin-bottom: 35px;
+	color: #fff;
+	background-color: #080607;
+	background-color: -webkit-linear-gradient(top left,#080607,#272727);
+	background-color: -o-linear-gradient(top left,#080607,#272727);
+	background-color: -moz-linear-gradient(top left,#080607,#272727);
+	background-color: linear-gradient(top left, #080607, #272727);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	background-size: contain;
+	box-shadow: 10px 10px 0 #d6d6d6;
+	float: left;
+}
+.kamniyom-box:nth-child(even) {
+	float: right;
+}
+.kamniyom-box:nth-child(1) {
+	background-image: url(../img/avatar-1.png);
+}
+.kamniyom-box:nth-child(2) {
+	background-image: url(../img/avatar-1.png);
+}
+.kamniyom-box:nth-child(3) {
+	background-image: url(../img/avatar-1.png);
+}
+.kamniyom-text {
+	width: 100%;
+	max-width: 580px;
+}
+.kamniyom-text p.small {
+	font-size: 21px;
+	margin-top: 8px;
+}
+
 /* FAQ */
 
 .faq {
@@ -460,10 +503,23 @@ input[type="text"]:focus, input[type="date"]:focus, input[type="email"]:focus, i
         to {height:120px;}
     }
 }
+@media screen and (max-width: 860px) {
+	.kamniyom-box {
+		min-height: 350px;
+		background-size: 200px auto;
+	}
+}
 @media screen and (max-width: 480px) {
     p {
         font-size: 24px;
     }
+	.kamniyom {
+		padding-bottom: 30px;
+	}
+	.kamniyom-box {
+		width: 100%;
+		margin-bottom: 15px;
+	}
 }
 @media screen and (max-width: 360px) {
     p {
@@ -475,4 +531,7 @@ input[type="text"]:focus, input[type="date"]:focus, input[type="email"]:focus, i
     .faq-detail p {
         font-size: 1.3rem;
     }
+	.kamniyom-box {
+		min-height: 410px;
+	}
 }
