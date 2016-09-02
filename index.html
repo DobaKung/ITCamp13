@@ -7,6 +7,8 @@
         <link rel="stylesheet" href="css/flexboxgrid.css" type="text/css"/>
         <link rel="stylesheet" href="css/custom.css" type="text/css"/>
         <link rel="stylesheet" href="css/subcamps.css" type="text/css" media="none" onload="if(media!='all')media='all'"/>
+        <link rel="stylesheet" href="css/owl.carousel.css">
+		<link rel="stylesheet" href="css/owl.theme.css" media="none" onload="if(media!='all')media='all'">
         <link rel="stylesheet" href="css/timeline.css" type="text/css" media="none" onload="if(media!='all')media='all'"/>
         <meta property="og:image" content="img/ogimage.png" />
         <meta property="og:description" content="ค่ายไอทีแคมป์ 13 โดยคณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง" />
@@ -179,28 +181,16 @@
         </div>
         <div class="gallery">
         	<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-sm-6 col-md-4">
-						<img src="img/itcamp12-compressed/itcamp12-5.jpg"/>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-4">
-						<img src="img/itcamp12-compressed/itcamp12-8.jpg"/>
-					</div>
-            	    <div class="col-xs-12 col-sm-6 col-md-4">
-            	    	<img src="img/itcamp12-compressed/itcamp12-5.jpg"/>
-            	    </div>
-                	<div class="col-xs-12 col-sm-6 col-md-4">
-                		<img src="img/itcamp12-compressed/itcamp12-5.jpg"/>
-                	</div>
-                	<div class="col-xs-12 col-sm-6 col-md-4">
-                		<img src="img/itcamp12-compressed/itcamp12-8.jpg"/>
-                	</div>
-                	<div class="col-xs-12 col-sm-6 col-md-4">
-                		<img src="img/itcamp12-compressed/itcamp12-5.jpg"/>
-                	</div>
-            	</div>
+				<div id="gallery-owl" class="owl-carousel owl-theme">
+					<div class="item"><img src="img/itcamp12-compressed/itcamp12-1.jpg"  alt="pic" /></div>
+					<div class="item"><img src="img/itcamp12-compressed/itcamp12-8.jpg"  alt="pic" /></div>
+					<div class="item"><img src="img/itcamp12-compressed/itcamp12-3.jpg"  alt="pic" /></div>
+					<div class="item"><img src="img/itcamp12-compressed/itcamp12-9.jpg"  alt="pic" /></div>
+					<div class="item"><img src="img/itcamp12-compressed/itcamp12-6.jpg"  alt="pic" /></div>
+                    <div class="item"><img src="img/itcamp12-compressed/itcamp12-7.jpg"  alt="pic" /></div>
+				</div>
 			</div>
-        </div>
+		</div>
         <section id="cd-timeline">
             <div class="cd-container">
             <div class="cd-timeline-block">
@@ -350,14 +340,7 @@
         <script src="js/autohide_nav.js"></script>
         <script src="js/camp_trigger.js"></script>
         <script src="js/nav_bg.js"></script>
-        <script>
-            // external js: masonry.pkgd.js
-			$('.grid').masonry({
-            itemSelector: '.grid-item img',
-            columnWidth: 160
-                                });
-            // external js: masonry.pkgd.js
-		</script>
+        <script src="js/owl.carousel.js"></script>
         <script src="js/subcamps.js"></script>
         <script type="text/javascript">
             $(document).ready(function(){
@@ -366,6 +349,27 @@
                     $(this).next().toggleClass("show");
                 });
             });
+        </script>
+        <script type="text/javascript">
+           $(document).ready(function() {
+ 
+  $("#gallery-owl").owlCarousel({
+ 
+      navigation : false, // Show next and prev buttons
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem:true
+ 
+      // "singleItem:true" is a shortcut for:
+      // items : 1, 
+      // itemsDesktop : false,
+      // itemsDesktopSmall : false,
+      // itemsTablet: false,
+      // itemsMobile : false
+ 
+  });
+ 
+});
         </script>
     </body>
 </html>
