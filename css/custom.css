@@ -140,10 +140,10 @@ span.remark {
 
 /* DIVS */
 
-.container {
+/*.container {
     width: 1000px;
     margin: 0 auto;
-}
+}*/
 .fullscreen {
     /* a full-screen div */
     height:100%;
@@ -347,6 +347,7 @@ a.btn:hover, button.ghost:hover {
     border-top: 4px dashed #efefef;
 }
 .contact {
+	margin-top: 15px;
     margin-bottom: 30px;
 }
 
@@ -407,10 +408,10 @@ input[type="text"]:focus, input[type="date"]:focus, input[type="email"]:focus, i
     .hero img {
         max-width: 250px;
     }
-    .container {
+    /*.container {
         width: 100%;
         max-width: 900px;
-    }
+    }*/
     .dropdown-content a img {
         width: 125px;
     }
@@ -432,9 +433,9 @@ input[type="text"]:focus, input[type="date"]:focus, input[type="email"]:focus, i
     }
 }
 @media screen and (max-width: 768px) {
-    .container {
+    /*.container {
         width: 100%;
-    }
+    }*/
     .navbar {
         display: none;
     }
@@ -444,6 +445,12 @@ input[type="text"]:focus, input[type="date"]:focus, input[type="email"]:focus, i
     p {
         font-size: 26px;
     }
+	.kamniyom-box, .kamniyom-box:nth-child(even) {
+		box-shadow: none;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 @media screen and (max-width: 1024px) {
     .dropdown-content a img {
