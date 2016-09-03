@@ -210,40 +210,50 @@ iframe.subcamps {
 }
 .kamniyom-box {
 	width: 90%;
-	max-width: 850px;
+	max-width: 980px;
 	padding: 30px 15px;
 	margin-bottom: 35px;
 	color: #fff;
-	background-color: #080607;
-	background-color: -webkit-linear-gradient(top left,#080607,#272727);
-	background-color: -o-linear-gradient(top left,#080607,#272727);
-	background-color: -moz-linear-gradient(top left,#080607,#272727);
-	background-color: linear-gradient(top left, #080607, #272727);
 	background-position: bottom right;
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: auto 230px;
 	box-shadow: 10px 10px 0 #d6d6d6;
 	float: left;
+}
+.kamniyom-box p {
+	font-size: 24px;
 }
 .kamniyom-box:nth-child(even) {
 	float: right;
 }
 .kamniyom-box:nth-child(1) {
+	background-color: #054277;
 	background-image: url(../img/avatar-1.png);
 }
 .kamniyom-box:nth-child(2) {
-	background-image: url(../img/avatar-1.png);
+	background-color: #000423;
+	background-image: url(../img/avatar-2.png);
 }
 .kamniyom-box:nth-child(3) {
-	background-image: url(../img/avatar-1.png);
+	background-color: #054277;
+	background-image: url(../img/avatar-3.png);
 }
 .kamniyom-text {
 	width: 100%;
-	max-width: 580px;
+	max-width: 700px;
+	margin-left: 20px;
 }
 .kamniyom-text p.small {
 	font-size: 21px;
 	margin-top: 8px;
+	opacity: 0.7;
+}
+.kamniyom h1 {
+	text-align: center;
+	width: 100%;
+	font-size: 50px;
+	margin-top: 10px;
+	margin-bottom: 40px;
 }
 
 /* FAQ */
@@ -252,7 +262,7 @@ iframe.subcamps {
 	background: #efefef;
 	padding: 50px 5px;
 }
-.faq h1, footer h1 {
+.faq h1, .footer h1 {
 	text-align: center;
 	font-size: 50px;
     margin-bottom: 30px;
@@ -415,6 +425,15 @@ input[type="text"]:focus, input[type="date"]:focus, input[type="email"]:focus, i
     .dropdown-content a img {
         width: 125px;
     }
+	.kamniyom-box:nth-child(1) {
+		min-height: 380px;
+	}
+	.kamniyom-box:nth-child(2) {
+		min-height: 420px;
+	}
+	.kamniyom-box:nth-child(3) {
+		min-height: 380px;
+	}
     @-webkit-keyframes sildedown {
         from {height:0;}
         to {height:172px;}
@@ -431,26 +450,6 @@ input[type="text"]:focus, input[type="date"]:focus, input[type="email"]:focus, i
         from {height:0;}
         to {height:125px;}
     }
-}
-@media screen and (max-width: 768px) {
-    /*.container {
-        width: 100%;
-    }*/
-    .navbar {
-        display: none;
-    }
-    .hero img {
-        max-width: 200px;
-    }
-    p {
-        font-size: 26px;
-    }
-	.kamniyom-box, .kamniyom-box:nth-child(even) {
-		box-shadow: none;
-		float: none;
-		margin-left: auto;
-		margin-right: auto;
-	}
 }
 @media screen and (max-width: 1024px) {
     .dropdown-content a img {
@@ -478,6 +477,46 @@ input[type="text"]:focus, input[type="date"]:focus, input[type="email"]:focus, i
 		min-height: 350px;
 		background-size: 200px auto;
 	}
+	.kamniyom-box:nth-child(2) {
+		min-height: 450px;
+	}
+	.kamniyom-box:nth-child(3) {
+		min-height: 360px;
+	}
+}
+@media screen and (max-width: 768px) {
+    /*.container {
+        width: 100%;
+    }*/
+    .navbar {
+        display: none;
+    }
+    .hero img {
+        max-width: 200px;
+    }
+    p {
+        font-size: 26px;
+    }
+	.kamniyom-box, .kamniyom-box:nth-child(even) {
+		box-shadow: none;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.kamniyom-text {
+		margin-left: 0;
+	}
+}
+@media screen and (max-width: 640px) {
+	.kamniyom-box:nth-child(1) {
+		min-height: 420px;
+	}
+	.kamniyom-box:nth-child(2) {
+		min-height: 500px;
+	}
+	.kamniyom-box:nth-child(3) {
+		min-height: 400px;
+	}
 }
 @media screen and (max-width: 480px) {
     p {
@@ -489,6 +528,15 @@ input[type="text"]:focus, input[type="date"]:focus, input[type="email"]:focus, i
 	.kamniyom-box {
 		width: 100%;
 		margin-bottom: 15px;
+	}
+	.kamniyom-box:nth-child(1) {
+		min-height: 650px;
+	}
+	.kamniyom-box:nth-child(2) {
+		min-height: 600px;
+	}
+	.kamniyom-box:nth-child(3) {
+		min-height: 460px;
 	}
 }
 @media screen and (max-width: 360px) {
@@ -503,5 +551,31 @@ input[type="text"]:focus, input[type="date"]:focus, input[type="email"]:focus, i
     }
 	.kamniyom-box {
 		min-height: 410px;
+	}
+	.kamniyom-box p {
+		font-size: 20px;
+	}
+	.kamniyom-box:nth-child(1) {
+		min-height: 620px;
+	}
+	.kamniyom-box:nth-child(2) {
+		min-height: 580px;
+	}
+	.kamniyom-box:nth-child(3) {
+		min-height: 440px;
+	}
+}
+@media screen and (max-width: 320px) {
+	.kamniyom-box {
+		background-position: bottom center;
+	}
+	.kamniyom-box:nth-child(1) {
+		min-height: 680px;
+	}
+	.kamniyom-box:nth-child(2) {
+		min-height: 650px;
+	}
+	.kamniyom-box:nth-child(3) {
+		min-height: 570px;
 	}
 }
