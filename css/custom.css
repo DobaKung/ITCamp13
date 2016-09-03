@@ -140,10 +140,10 @@ span.remark {
 
 /* DIVS */
 
-.container {
+/*.container {
     width: 1000px;
     margin: 0 auto;
-}
+}*/
 .fullscreen {
     /* a full-screen div */
     height:100%;
@@ -189,6 +189,18 @@ span.remark {
 iframe.subcamps {
     border: none;
     margin: 0 0 -4px 0;
+}
+
+/* GALLERY */
+
+.gallery {
+	padding-top: 55px;
+	padding-bottom: 40px;
+	background: #efefef;
+}
+.gallery img {
+	width: 100%;
+	margin-bottom: 15px;
 }
 
 /* KAMNIYOM */
@@ -327,13 +339,15 @@ a.btn:hover, button.ghost:hover {
 /* FOOTER */
 
 .footer {
-    background: #000;
+    background-color: #000;
+	background-image: url(../img/dotted-bg.jpg);
     width: 100%;
-    padding: 38px 30px 30px;
+    padding: 38px 30px;
     color: #fff;
     border-top: 4px dashed #efefef;
 }
 .contact {
+	margin-top: 15px;
     margin-bottom: 30px;
 }
 
@@ -388,66 +402,16 @@ input[type="text"]:focus, input[type="date"]:focus, input[type="email"]:focus, i
   }
 }
 
-/* Masonry */
-
-
-
-.grid {
-  background: #EEE;
-  max-width: 100%;
-  position: relative;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* clearfix */
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-
-
-.grid-item img {
-  width: 480px;
-  height: 450px;
-  float: left;
-  border: 2px solid #333;
-  border-color: hsla(0, 0%, 0%, 0.5);
-  border-radius: 5px;
-  opacity: 0.8;
-}
-
-.grid-item--width2 img { width: 600px; }
-.grid-item--width3 img{ width: 480px; }
-.grid-item--width4 img{ width: 640px; }
-
-.grid-item--height2 img{ height: 900px; }
-.grid-item--height3 img{ height: 260px; }
-.grid-item--height4 img{ height: 360px; }
-
-.stamp {
-  position: absolute;
-  left: 10%;
-  top: 50px;
-  width: 10%;
-  height: 10px;
-  background: #EEEEEE;
-  border: 1px dotted #EEEEEE;
-}
-
-
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1199px) {
     .hero img {
         max-width: 250px;
     }
-    .container {
+    /*.container {
         width: 100%;
         max-width: 900px;
-    }
+    }*/
     .dropdown-content a img {
         width: 125px;
     }
@@ -469,9 +433,9 @@ input[type="text"]:focus, input[type="date"]:focus, input[type="email"]:focus, i
     }
 }
 @media screen and (max-width: 768px) {
-    .container {
+    /*.container {
         width: 100%;
-    }
+    }*/
     .navbar {
         display: none;
     }
@@ -481,6 +445,12 @@ input[type="text"]:focus, input[type="date"]:focus, input[type="email"]:focus, i
     p {
         font-size: 26px;
     }
+	.kamniyom-box, .kamniyom-box:nth-child(even) {
+		box-shadow: none;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 @media screen and (max-width: 1024px) {
     .dropdown-content a img {

@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/flexboxgrid.css" type="text/css"/>
-        <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet" media="none" onload="if(media!='all')media='all'"/>
         <link rel="stylesheet" href="css/custom.css" type="text/css"/>
         <link rel="stylesheet" href="css/subcamps.css" type="text/css" media="none" onload="if(media!='all')media='all'"/>
         <link rel="stylesheet" href="css/timeline.css" type="text/css" media="none" onload="if(media!='all')media='all'"/>
@@ -20,31 +19,31 @@
             </a>
             <nav class="menu">
                 <a class="dropdown-trigger" onclick="myFunction()">ค่ายย่อย</a>
-                <a href="#">หน้าแรก</a>
-                <a href="#">กำหนดการ</a>
-                <a href="#">ติดต่อ</a>
+                <a href="#hero">หน้าแรก</a>
+                <a href="#cd-timeline">กำหนดการ</a>
+                <a href="#contact">ติดต่อ</a>
             </nav>
 		</header>
-    <div class="dropdown-content" id="myDropdown">
-        <div class="row center-xs middle-xs">
-            <div class="col-xs-2">
-                <a href="#"><img src="img/circle.svg" /></a>
-            </div>
-            <div class="col-xs-2">
-                <a href="#"><img src="img/circle.svg"/></a>
-            </div>
-            <div class="col-xs-2">
-                <a href="#"><img src="img/circle.svg"/></a>
-            </div>
-            <div class="col-xs-2">
-                <a href="#"><img src="img/circle.svg"/></a>
-            </div>
-            <div class="col-xs-2">
-                <a href="#"><img src="img/circle.svg"/></a>
-            </div>
-        </div>
-    </div>
-        <div class="fullscreen hero row center-xs middle-xs">
+    	<div class="dropdown-content" id="myDropdown">
+        	<div class="row center-xs middle-xs">
+            	<div class="col-xs-2">
+            	    <a href="#"><img src="img/circle.svg" /></a>
+            	</div>
+            	<div class="col-xs-2">
+            	    <a href="#"><img src="img/circle.svg"/></a>
+            	</div>
+            	<div class="col-xs-2">
+            	    <a href="#"><img src="img/circle.svg"/></a>
+            	</div>
+            	<div class="col-xs-2">
+            	    <a href="#"><img src="img/circle.svg"/></a>
+            	</div>
+            	<div class="col-xs-2">
+            	    <a href="#"><img src="img/circle.svg"/></a>
+            	</div>
+        	</div>
+    	</div>
+        <div class="fullscreen hero row center-xs middle-xs" id="hero">
 			<div class="col-xs-12 col-sm-10 col-md-4">
 				<img src="img/skull.png"/>
 				<div class="row cta-group">
@@ -63,19 +62,6 @@
         		<p>เมื่อเหล่าพี่เลี้ยงประจำผู้พิทักษ์ทั้งสี่องค์กรลับไอทีแคมป์ ได้ค้นพบความจริงที่น่าตกใจว่าค่ายอันสงบสุขของพวกเขาได้ถูกผู้ก่อการกบฎปล่อยไวรัสเข้ามาทำลายระบบความปลอดภัยจนเสียหาย เหล่าพี่เลี้ยงจึงต้องออกตามหาเหล่าผู้พิทักษ์ Appersky ปรมาจารย์แห่งแอพพลิเคชั่น, Gameroft ผู้พัฒนาแห่งเกม, NetworkDefender ผู้พิทักษ์แห่งเครือข่าย และ IOTech ผู้สร้างอุปกรณ์ล้ำสมัย มาผนึกกำลังกันเพื่อตามหาผู้ก่อการกบฎนี้ มาร่วมเป็นส่วนหนึ่งของสุดยอดผู้พิทักษ์องค์กรเพื่อหยุดยั้งการทำลายล้างได้ที่ ITCAMP_13</p>
         	</div>
         </div>
-        <div class="row">
-			<div class="col-xs-12 col-md-12 middle-xs center-xs">
-				<p><button class="stamp-button">Toggle stamp</button></p>
-            	<div class="grid">
-            		<div class="grid-item grid-item--height2 "><img src="img/itcamp12-compressed/itcamp12-2.jpg"/></div>
-            		<div class="grid-item "><img src="img/itcamp12-compressed/itcamp12-1.jpg"/></div>
-            		<div class="grid-item grid-item--height2"><img src="img/itcamp12-compressed/itcamp12-5.jpg"/></div>
-            		<div class="grid-item grid-item--height2"><img src="img/itcamp12-compressed/itcamp12-4.jpg"/></div>
-            		<div class="grid-item "><img src="img/itcamp12-compressed/itcamp12-3.jpg"/></div>
-            		<div class="grid-item"><img src="img/itcamp12-compressed/itcamp12-6.jpg"/></div>
-				</div>
-			</div>
-		</div>
         <div class="fullscreen cont s--inactive">
             <!-- cont inner start -->
             <div class="cont__inner">
@@ -190,6 +176,30 @@
                     </div>
                 </div><!-- el end -->
             </div><!-- cont inner end -->
+        </div>
+        <div class="gallery">
+        	<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<img src="img/itcamp12-compressed/itcamp12-5.jpg"/>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<img src="img/itcamp12-compressed/itcamp12-8.jpg"/>
+					</div>
+            	    <div class="col-xs-12 col-sm-6 col-md-4">
+            	    	<img src="img/itcamp12-compressed/itcamp12-5.jpg"/>
+            	    </div>
+                	<div class="col-xs-12 col-sm-6 col-md-4">
+                		<img src="img/itcamp12-compressed/itcamp12-5.jpg"/>
+                	</div>
+                	<div class="col-xs-12 col-sm-6 col-md-4">
+                		<img src="img/itcamp12-compressed/itcamp12-8.jpg"/>
+                	</div>
+                	<div class="col-xs-12 col-sm-6 col-md-4">
+                		<img src="img/itcamp12-compressed/itcamp12-5.jpg"/>
+                	</div>
+            	</div>
+			</div>
         </div>
         <section id="cd-timeline">
             <div class="cd-container">
@@ -316,16 +326,16 @@
                 </div>
 			</div>
         </div>
-        <div class="footer">
+        <div class="footer" id="contact">
             <div class="row center-xs">
                 <div class="col-xs-12 col-md-4">
                     <h1>ติดต่อ</h1>
                     <div class="row contact">
-                        <div class="col-xs-12 col-md">
+                        <div class="col-xs-6">
                             <p>P' Fah</p>
                             <p>081-234-5678</p>
                         </div>
-                        <div class="col-xs-12 col-md">
+                        <div class="col-xs-6">
                             <p>P' Shareef</p>
                             <p>081-585-6504</p>
                         </div>
@@ -337,30 +347,16 @@
             </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-        <script src="js\autohide_nav.js"></script>
-        <script src="js\camp_trigger.js"></script>
-        <script src="js\nav_bg.js"></script>
-        <script src="js/masonry.pkgd.min.js"></script>
+        <script src="js/autohide_nav.js"></script>
+        <script src="js/camp_trigger.js"></script>
+        <script src="js/nav_bg.js"></script>
         <script>
-			// external js: masonry.pkgd.js
-			var $grid = $('.grid').masonry({
-				itemSelector: '.grid-item',
-				columnWidth: 160
-			});
-			var $stamp = $grid.find('.stamp');
-			var isStamped = false;
-			$('.stamp-button').on( 'click', function() {
-				// stamp or unstamp element
-				if ( isStamped ) {
-					$grid.masonry( 'unstamp', $stamp );
-				} else {
-					$grid.masonry( 'stamp', $stamp );
-				}
-				// trigger layout
-				$grid.masonry('layout');
-                // set flag
-                isStamped = !isStamped;
-			});
+            // external js: masonry.pkgd.js
+			$('.grid').masonry({
+            itemSelector: '.grid-item img',
+            columnWidth: 160
+                                });
+            // external js: masonry.pkgd.js
 		</script>
         <script src="js/subcamps.js"></script>
         <script type="text/javascript">
