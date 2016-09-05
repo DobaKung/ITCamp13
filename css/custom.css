@@ -281,7 +281,7 @@ button.faq-box {
 }
 button.faq-box:hover {
     border: none;
-	border-left: 15px solid #203db7;
+	border-left: 15px solid #12cffe;
     background: #fff;
     color: #000;
     cursor: pointer;

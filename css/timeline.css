@@ -1,4 +1,4 @@
-/* -------------------------------- 
+/* --------------------------------
 
 Modules - reusable parts of our design
 
@@ -104,7 +104,7 @@ Modules - reusable parts of our design
   margin-left: 60px;
   background: white;
   padding: 20px 20px 10px;
-  box-shadow: 4px 4px 0 #05b7f7;
+  box-shadow: 4px 4px 0 #12cffe;
 }
 .cd-timeline-content:after {
   content: "";
