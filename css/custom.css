@@ -163,7 +163,7 @@ h1.reg-title {
     background-attachment: fixed;
 }
 .hero img {
-	max-width: 300px;
+	max-width: 240px;
 }
 .hero a.btn{
     background: none;
@@ -451,7 +451,7 @@ input[type="text"]:focus, input[type="date"]:focus, input[type="email"]:focus, i
 
 @media screen and (max-width: 1199px) {
     .hero img {
-        max-width: 250px;
+        max-width: 200px;
     }
     /*.container {
         width: 100%;
