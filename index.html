@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="th">
     <head>
-        <title>IT CAMP 13</title>
+        <title>IT_CAMP13 | ไอทีแคมป์13</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/flexboxgrid.css" type="text/css"/>
@@ -29,13 +29,13 @@
     	<div class="dropdown-content" id="myDropdown">
         	<div class="row center-xs middle-xs">
             	<div class="col-xs-2">
-            	    <a href="#"><img src="img/circle.svg" /></a>
+            	    <a href="#app-sub"><img src="img/app-ico.svg" /></a>
             	</div>
             	<div class="col-xs-2">
-            	    <a href="#"><img src="img/circle.svg"/></a>
+            	    <a href="#"><img src="img/game-ico.svg"/></a>
             	</div>
             	<div class="col-xs-2">
-            	    <a href="#"><img src="img/circle.svg"/></a>
+            	    <a href="#"><img src="img/nw-ico.svg"/></a>
             	</div>
             	<div class="col-xs-2">
             	    <a href="#"><img src="img/circle.svg"/></a>
@@ -46,25 +46,28 @@
         	</div>
     	</div>
         <div class="fullscreen hero row center-xs middle-xs" id="hero">
-			<div class="col-xs-12 col-sm-10 col-md-4">
-				<img src="img/skull.png"/>
+            <canvas id="bg" class="molecules__wrapper">
+            </canvas>
+			<div class="col-xs-12 col-sm-10 col-md-4" style="z-index=1;">
+				<img src="img/skull.png" style="-webkit-filter: invert();" class="logo1">
+                <img src="img/hero.gif" class="logo2">
 				<div class="row cta-group">
 					<div class="col-xs-12 col-sm-6">
-						<a href="#" class="btn btn-full">ลงทะเบียน</a>
+						<a href="#" class="btn btn-full hero-btn">ลงทะเบียน</a>
 					</div>
-					<div class="col-xs-12 col-sm-6">
-						<a href="#" class="btn btn-full">ลงทะเบียน</a>
+					<div class="col-xs-12 col-sm-6 hero-btn">
+						<a href="#camp-stories" class="btn btn-full">รายละเอียดค่าย</a>
 					</div>
 				</div>
 				<span class="remark">*All designs are not final.</span>
 			</div>
         </div>
-        <div class="fullscreen camp-stories row center-xs middle-xs">
+        <div class="fullscreen camp-stories row center-xs middle-xs" id="camp-stories">
         	<div class="col-xs-11 col-sm-10 col-md-8 col-lg-7">
         		<p>เมื่อเหล่าพี่เลี้ยงประจำผู้พิทักษ์ทั้งสี่องค์กรลับไอทีแคมป์ ได้ค้นพบความจริงที่น่าตกใจว่าค่ายอันสงบสุขของพวกเขาได้ถูกผู้ก่อการกบฎปล่อยไวรัสเข้ามาทำลายระบบความปลอดภัยจนเสียหาย เหล่าพี่เลี้ยงจึงต้องออกตามหาเหล่าผู้พิทักษ์ Appersky ปรมาจารย์แห่งแอพพลิเคชั่น, Gameroft ผู้พัฒนาแห่งเกม, NetworkDefender ผู้พิทักษ์แห่งเครือข่าย และ IOTech ผู้สร้างอุปกรณ์ล้ำสมัย มาผนึกกำลังกันเพื่อตามหาผู้ก่อการกบฎนี้ มาร่วมเป็นส่วนหนึ่งของสุดยอดผู้พิทักษ์องค์กรเพื่อหยุดยั้งการทำลายล้างได้ที่ ITCAMP_13</p>
         	</div>
         </div>
-        <div class="fullscreen cont s--inactive">
+        <div class="fullscreen cont s--inactive" style="background:#101010;" id="app-sub">
             <!-- cont inner start -->
             <div class="cont__inner">
                 <!-- el start -->
@@ -82,7 +85,7 @@
                                     Appersky
                                 </div>
                                 <div class="el__text">
-                                    ค่าย Appersky เป็นค่ายที่จะสอนน้องๆ ในการพัฒนาแอพอย่างไรให้อร่อย ตั้งแต่การเลือกวัตถุดิบที่ตลาด จนถึงการเปิดเตาอบอย่างชาญฉลาดไม่ให้เปลืองไฟ ที่ค่ายนี้น้องๆ จะได้เรียนรู้เกี่ยวกับการพัฒนาแอพอย่างไรให้อร่อย ตั้งแต่การเลือกวัตถุดิบที่ตลาด จนถึงการเปิดเตาอบอย่างชาญฉลาดไม่ให้เปลืองไฟ
+                                    ตามรอยปรมาจารย์แห่งแอพพลิเคชั่นกับ Appersky ค่ายที่จะพาน้องๆ เหล่าผู้กล้าไปร่วมกันสร้างแอพพลิเคชั่นที่ไม่เหมือนใครเพื่อมาปราบเหล่าผู้ก่อการกบฎโดยใช้โปรแกรม Microsoft Visual Studio บนระบบปฎิบัติการ Windows 10
                                 </div>
                                 <div class="el__close-btn"></div>
                             </div>
@@ -104,7 +107,7 @@
                                     Gameroft
                                 </div>
                                 <div class="el__text">
-                                    ค่าย Appersky เป็นค่ายที่จะสอนน้องๆ ในการพัฒนาแอพอย่างไรให้อร่อย ตั้งแต่การเลือกวัตถุดิบที่ตลาด จนถึงการเปิดเตาอบอย่างชาญฉลาดไม่ให้เปลืองไฟ ที่ค่ายนี้น้องๆ จะได้เรียนรู้เกี่ยวกับการพัฒนาแอพอย่างไรให้อร่อย ตั้งแต่การเลือกวัตถุดิบที่ตลาด จนถึงการเปิดเตาอบอย่างชาญฉลาดไม่ให้เปลืองไฟ
+                                    ยืนหยัดเคียงข้างทำลายล้างไวรัสกับผู้พัฒนา Gamesoft แห่งโลกเกมเมอร์ ที่จะพาน้องฟินเวอร์ไปกับการสร้างเกมยอดฮิต ที่มีอาวุธลับเป็นโปรแกรม Construct2 โปรแกรมที่ใช้สุดจะง่ายแสนง่าย เพียงแค่คลิก ลาก และวาง
                                 </div>
                                 <div class="el__close-btn"></div>
                             </div>
@@ -126,7 +129,7 @@
                                     NetworkDefender
                                 </div>
                                 <div class="el__text">
-                                    ค่าย Appersky เป็นค่ายที่จะสอนน้องๆ ในการพัฒนาแอพอย่างไรให้อร่อย ตั้งแต่การเลือกวัตถุดิบที่ตลาด จนถึงการเปิดเตาอบอย่างชาญฉลาดไม่ให้เปลืองไฟ ที่ค่ายนี้น้องๆ จะได้เรียนรู้เกี่ยวกับการพัฒนาแอพอย่างไรให้อร่อย ตั้งแต่การเลือกวัตถุดิบที่ตลาด จนถึงการเปิดเตาอบอย่างชาญฉลาดไม่ให้เปลืองไฟ
+                                    ร่วมปราบไวรัสกับ NetworkDefender ที่จะพาน้องๆ ผจญภัยไปบนระบบเครือข่าย ช่วยกันค้นหาและทำความเข้าใจความลับต่างๆ ของการทำงานบนโครงสร้างเครือข่ายที่ซับซ้อนกันอย่างง่ายๆ และยังได้ทดลองสร้างระบบจำลองอีกด้วย
                                 </div>
                                 <div class="el__close-btn"></div>
                             </div>
@@ -148,7 +151,7 @@
                                     IOTech
                                 </div>
                                 <div class="el__text">
-                                    ค่าย Appersky เป็นค่ายที่จะสอนน้องๆ ในการพัฒนาแอพอย่างไรให้อร่อย ตั้งแต่การเลือกวัตถุดิบที่ตลาด จนถึงการเปิดเตาอบอย่างชาญฉลาดไม่ให้เปลืองไฟ ที่ค่ายนี้น้องๆ จะได้เรียนรู้เกี่ยวกับการพัฒนาแอพอย่างไรให้อร่อย ตั้งแต่การเลือกวัตถุดิบที่ตลาด จนถึงการเปิดเตาอบอย่างชาญฉลาดไม่ให้เปลืองไฟ
+                                    เตรียมพร้อมรับมือไวรัสตัวร้ายไปกับ ผู้พิทักษ์แห่งการสรรค์สร้าง IOTech ที่พร้อมจะพาน้องๆไปรู้จักและสัมผัส Internet Of Things เทคโนโลยีสุดก้าวล้ำแห่งองค์กรลับไอทีแคมป์ ที่มีอาวุธที่ทรงพลานุภาพอย่าง Arduino รวมถึงเครื่องมือต่างๆ อีกมากมาย ไปลุยกันนนน!!!
                                 </div>
                                 <div class="el__close-btn"></div>
                             </div>
@@ -162,15 +165,15 @@
                             <div class="el__bg"></div>
                             <div class="el__preview-cont">
                                 <h2 class="el__heading">
-                                    DataScience
+                                    DataCyber
                                 </h2>
                             </div>
                             <div class="el__content">
                                 <div class="el__title">
-                                    DataScience
+                                    DataCyber
                                 </div>
                                 <div class="el__text">
-                                    ค่าย Appersky เป็นค่ายที่จะสอนน้องๆ ในการพัฒนาแอพอย่างไรให้อร่อย ตั้งแต่การเลือกวัตถุดิบที่ตลาด จนถึงการเปิดเตาอบอย่างชาญฉลาดไม่ให้เปลืองไฟ ที่ค่ายนี้น้องๆ จะได้เรียนรู้เกี่ยวกับการพัฒนาแอพอย่างไรให้อร่อย ตั้งแต่การเลือกวัตถุดิบที่ตลาด จนถึงการเปิดเตาอบอย่างชาญฉลาดไม่ให้เปลืองไฟ
+                                    มาแกะรอยการถูกล้วงความลับของข้อมูลไปกับ DataCyber ผู้พิทักษ์แห่งองค์กรลับไอทีแคมป์ที่จะพาน้องไปเรียนรู้เกี่ยวกับการนำข้อมูลมาทำสถิติ รวมทั้งวิธีนำข้อมูลเหล่านั้นมาใช้ให้เกิดประโยชน์สูงสุดกับองค์กรไอทีแคมป์ของเรา!
                                 </div>
                                 <div class="el__close-btn"></div>
                             </div>
@@ -180,12 +183,13 @@
             </div><!-- cont inner end -->
         </div>
         <div class="gallery">
+            <h1>บรรยากาศกิจกรรม</h1>
         	<div class="container">
 				<div id="gallery-owl" class="owl-carousel owl-theme">
-					<div class="item"><img src="img/itcamp12-compressed/itcamp12-1.jpg"  alt="pic" /></div>
 					<div class="item"><img src="img/itcamp12-compressed/itcamp12-8.jpg"  alt="pic" /></div>
 					<div class="item"><img src="img/itcamp12-compressed/itcamp12-3.jpg"  alt="pic" /></div>
 					<div class="item"><img src="img/itcamp12-compressed/itcamp12-9.jpg"  alt="pic" /></div>
+					<div class="item"><img src="img/itcamp12-compressed/itcamp12-1.jpg"  alt="pic" /></div>
 					<div class="item"><img src="img/itcamp12-compressed/itcamp12-6.jpg"  alt="pic" /></div>
                     <div class="item"><img src="img/itcamp12-compressed/itcamp12-7.jpg"  alt="pic" /></div>
 				</div>
@@ -259,7 +263,7 @@
         			<div class="kamniyom-box">
         				<div class="kamniyom-text">
         					<p>ไอทีแคมป์คือค่ายที่เป็นจุดเริ่มต้นของความผูกพันธ์ที่พี่มีต่อคณะไอทีแห่งนี้ ทั้งสาระความรู้ที่ทำให้พี่ได้ค้นพบเส้นทางของตัวเองทางด้านเทคโนโลยี ซึ่งสำหรับใครที่มีพื้นฐานหรือชอบในด้านนี้อยู่แล้วก็จะได้มาพบเจอกับเพื่อนใหม่ๆ ที่สนใจในด้านเดียวกัน แต่สำหรับใครที่ยังหาตัวเองไม่เจอว่าชอบอะไรก็มาลองค้นหาตัวเองจากค่ายนี้ได้เช่นกัน นอกจากสาระความรู้แล้วก็ยังมีความสนุกสนานจากกิจกรรมต่างๆ รวมถึงการดูแลเอาใจใส่จากจากพี่ๆ ภายในคณะที่จะทำให้น้องรู้สึกเหมือนเป็นส่วนหนึ่งของครอบครัวไอทีแห่งนี้เลย แล้วน้องจะรู้ว่า 4 วัน 3 คืนนี้มันคุ้มจริงๆ จนไม่อยากกลับเลยล่ะ และนี่ก็คือความทรงจำของพี่กับค่ายนี้ที่อยากให้น้องๆ ได้ลองมาสัมผัสกันดู แล้วน้องจะไม่มีทางลืมมันได้เล๊ยยยย! #เสียงสู๊งง</p>
-        					<p class="small">นายธนวัฒน์ กุสูงเนิน</p>
+        					<p class="small">นายธนวัฒน์ กุสูงเนิน<br>ITCAMP12 - ประธานค่าย<br>ITCAMP11 - พี่ค่าย<br>ITCAMP10 - น้องค่าย</p>
 						</div>
         			</div>
         			<div class="kamniyom-box">
@@ -354,24 +358,15 @@
         </script>
         <script type="text/javascript">
            $(document).ready(function() {
-
-  $("#gallery-owl").owlCarousel({
-
-      navigation : false, // Show next and prev buttons
-      slideSpeed : 300,
-      paginationSpeed : 400,
-      singleItem:true
-
-      // "singleItem:true" is a shortcut for:
-      // items : 1,
-      // itemsDesktop : false,
-      // itemsDesktopSmall : false,
-      // itemsTablet: false,
-      // itemsMobile : false
-
-  });
-
-});
+			   $("#gallery-owl").owlCarousel({
+				   navigation : false, // Show next and prev buttons
+				   slideSpeed : 300,
+				   paginationSpeed : 400,
+				   singleItem:true,
+				   lazyLoad: true
+			   });
+		   });
         </script>
+        <script src="js/particler.min.js"></script>
     </body>
 </html>
