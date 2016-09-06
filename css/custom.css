@@ -82,8 +82,6 @@ span.remark {
     font-weight: 700;
     margin-left: 28px;
     float: left;
-    -webkit-filter: invert();
-    filter: invert();
 }
 .navbar__logo img {
     width: 120px;
