@@ -164,6 +164,7 @@ h1.reg-title {
 }
 .hero img {
 	max-width: 240px;
+    margin-bottom: 25px;
 }
 .hero a.btn{
     background: none;
