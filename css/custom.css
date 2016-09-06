@@ -47,9 +47,6 @@ h1.reg-title {
 .reg-bg h4 {
     margin: 5px 0 7px 0;
 }
-span.remark {
-	color: red;
-}
 
 /* NAVBAR */
 
@@ -168,9 +165,14 @@ span.remark {
 .hero img {
 	max-width: 300px;
 }
-.hero-btn{
-    -webkit-filter: invert();
-    filter: invert();
+.hero a.btn{
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+}
+.hero a.btn:hover {
+    background: #fff;
+    color: #000;
 }
 .molecules__wrapper {
     width: 100%;
