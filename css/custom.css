@@ -75,7 +75,7 @@ span.remark {
     top : 0;
 }
 .navbar.bg {
-  background-color: #fff;
+  background-color: #000;
   transition: 0.6s;
 }
 .navbar__logo {
