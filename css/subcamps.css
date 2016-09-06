@@ -297,7 +297,7 @@
 .el:nth-child(1) .el__bg:before {
     -webkit-transition-delay: 0;
     transition-delay: 0;
-    background-image: url('../img/sub-apps.png');
+    background-image: url('../img/sub-apps.jpg');
 }
 
 .el:nth-child(2) {
@@ -330,7 +330,7 @@
 .el:nth-child(2) .el__bg:before {
     -webkit-transition-delay: .1s;
     transition-delay: .1s;
-    background-image: url('../img/sub-game.png');
+    background-image: url('../img/sub-game.jpg');
 }
 
 .el:nth-child(3) {
@@ -363,7 +363,7 @@
 .el:nth-child(3) .el__bg:before {
     -webkit-transition-delay: .2s;
     transition-delay: .2s;
-    background-image: url('../img/sub-nw.png');
+    background-image: url('../img/sub-nw.jpg');
 }
 
 .el:nth-child(4) {
@@ -396,7 +396,7 @@
 .el:nth-child(4) .el__bg:before {
     -webkit-transition-delay: .3s;
     transition-delay: .3s;
-    background-image: url('../img/sub-iot.png');
+    background-image: url('../img/sub-iot.jpg');
 }
 
 .el:nth-child(5) {
@@ -429,7 +429,7 @@
 .el:nth-child(5) .el__bg:before {
     -webkit-transition-delay: .4s;
     transition-delay: .4s;
-    background-image: url('../img/sub-data.png');
+    background-image: url('../img/sub-data.jpg');
 }
 
 .el:hover .el__bg:after {
