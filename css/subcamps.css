@@ -186,6 +186,7 @@
     pointer-events: auto;
     -webkit-transition: all .5s 1.4s;
     transition: all .5s 1.4s;
+    background-color: rgba(0,0,0,0.5);
 }
 
 .el__title {

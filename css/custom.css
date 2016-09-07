@@ -25,7 +25,7 @@ html, body {
 }
 
 p {
-	font-size: 32px;
+	font-size: 28px;
 	font-family: "th_chakra_petch", sans-serif;
 }
 h1.reg-title {
@@ -203,6 +203,15 @@ h1.reg-title {
     background-image: url(../img/dotted-bg.jpg);
     background-size: 30%;
 	color: #fff;
+    width: 100%;
+    background-position: top;
+}
+.camp-stories .detail{
+    margin-top: 80px;
+}
+.stories-screen{
+    width: 100%;
+    margin: 0 auto;
 }
 .spacer {
     width: 100%;
