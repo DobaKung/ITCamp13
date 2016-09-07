@@ -98,9 +98,9 @@ h1.reg-title {
     background: #fff;
     color: #000;
     -webkit-transition: width 500ms cubic-bezier(0.175, 0.885, 0.320, 1), background 500ms ease;
-    -webkit-transition: width 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275), background 500ms ease; 
-    -moz-transition: width 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275), background 500ms ease; 
-    -o-transition: width 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275), background 500ms ease; 
+    -webkit-transition: width 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275), background 500ms ease;
+    -moz-transition: width 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275), background 500ms ease;
+    -o-transition: width 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275), background 500ms ease;
     transition: width 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275), background 500ms ease;
 }
 .dropdown-trigger {
@@ -121,18 +121,20 @@ h1.reg-title {
     z-index: 4;
 }
 .dropdown-content a {
-    color: black;
+    color: white;
     text-decoration: none;
     display: block;
     text-align: center;
     transition: opacity 0.2s;
+    line-height: 32px;
+    margin-bottom: 10px;
 }
 .dropdown-content a:hover {
     opacity: 0.6;
 }
 .dropdown-content a img {
     margin: 0 auto;
-    width: 160px;
+    width: 100px;
     animation-name: sildedown2;
     animation-duration: 0.8s;
 }
