@@ -154,9 +154,11 @@
 }
 
 .el__heading {
-    color: #fff;
+    color: #12cffe;
     text-transform: uppercase;
     font-size: 50px;
+    background-color: rgba(0,0,0,0.8);
+    border: 10px solid rgba(0,0,0,0);
 }
 
 .el__content {
@@ -171,6 +173,11 @@
     pointer-events: none;
     -webkit-transition: all .1s;
     transition: all .1s;
+<<<<<<< HEAD
+=======
+    background-color: rgba(0,0,0,0.5);
+    border: 5px solid rgba(0,0,0,0);
+>>>>>>> 2540dce9ea70ae0df79f8386cdb7cf07a756b18c
 }
 
 .el.s--active .el__content {
@@ -179,13 +186,14 @@
     pointer-events: auto;
     -webkit-transition: all .5s 1.4s;
     transition: all .5s 1.4s;
+    background-color: rgba(0,0,0,0.5);
 }
 
 .el__title {
     text-transform: uppercase;
     font-size: 50px;
     font-weight: bold;
-    color: #fff;
+    color: #12cffe;
     margin-bottom: 20px;
 }
 
@@ -290,7 +298,7 @@
 .el:nth-child(1) .el__bg:before {
     -webkit-transition-delay: 0;
     transition-delay: 0;
-    background-image: url('../img/subcamp-placehldr.png');
+    background-image: url('../img/sub-apps.jpg');
 }
 
 .el:nth-child(2) {
@@ -323,7 +331,7 @@
 .el:nth-child(2) .el__bg:before {
     -webkit-transition-delay: .1s;
     transition-delay: .1s;
-    background-image: url('../img/subcamp-placehldr.png');
+    background-image: url('../img/sub-game.jpg');
 }
 
 .el:nth-child(3) {
@@ -356,7 +364,7 @@
 .el:nth-child(3) .el__bg:before {
     -webkit-transition-delay: .2s;
     transition-delay: .2s;
-    background-image: url('../img/subcamp-placehldr.png');
+    background-image: url('../img/sub-nw.jpg');
 }
 
 .el:nth-child(4) {
@@ -389,7 +397,7 @@
 .el:nth-child(4) .el__bg:before {
     -webkit-transition-delay: .3s;
     transition-delay: .3s;
-    background-image: url('../img/subcamp-placehldr.png');
+    background-image: url('../img/sub-iot.jpg');
 }
 
 .el:nth-child(5) {
@@ -422,7 +430,7 @@
 .el:nth-child(5) .el__bg:before {
     -webkit-transition-delay: .4s;
     transition-delay: .4s;
-    background-image: url('../img/subcamp-placehldr.png');
+    background-image: url('../img/sub-data.jpg');
 }
 
 .el:hover .el__bg:after {

@@ -5,6 +5,7 @@ An official website for IT Camp 13.
 <b>Front-end:</b>
 - Kasidis Chaowvasin
 - Nathan Yiangsupapaanontr
+- Pattadon Baongern
 - Pornprom Kiawjak
 - Thanathep Thaithae
 
