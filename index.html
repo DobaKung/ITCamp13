@@ -1,379 +1,442 @@
 <!DOCTYPE html>
 <html lang="th">
-    <head>
-        <title>IT_CAMP13 | ไอทีแคมป์13</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="css/flexboxgrid.css" type="text/css"/>
-        <link rel="stylesheet" href="css/custom.css" type="text/css"/>
-        <link rel="stylesheet" href="css/subcamps.css" type="text/css" media="none" onload="if(media!='all')media='all'"/>
-        <link rel="stylesheet" href="css/owl.carousel.css" media="none" onload="if(media!='all')media='all'"/>
+	<head>
+		<title>IT_CAMP13 | ไอทีแคมป์13</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/flexboxgrid.css" type="text/css"/>
+		<link rel="stylesheet" href="css/custom.css" type="text/css"/>
+		<link rel="stylesheet" href="css/subcamps.css" type="text/css" media="none" onload="if(media!='all')media='all'"/>
+		<link rel="stylesheet" href="css/owl.carousel.css" media="none" onload="if(media!='all')media='all'"/>
 		<link rel="stylesheet" href="css/owl.theme.css" media="none" onload="if(media!='all')media='all'">
-        <link rel="stylesheet" href="css/timeline.css" type="text/css" media="none" onload="if(media!='all')media='all'"/>
-        <meta property="og:image" content="img/ogimage.png" />
-        <meta property="og:description" content="ค่ายไอทีแคมป์ 13 โดยคณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง" />
-    </head>
+		<link rel="stylesheet" href="css/timeline.css" type="text/css" media="none" onload="if(media!='all')media='all'"/>
+		<link rel="stylesheet" href="css/kamniyom.css" type="text/css" media="none" onload="if(media!='all')media='all'"/>
+		<meta property="og:image" content="img/ogimage.png" />
+		<meta property="og:description" content="ค่ายไอทีแคมป์ 13 โดยคณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง" />
+	</head>
 	<body>
 		<header class="navbar">
-            <a href="#" class="navbar__icon" id="navbar__icon"></a>
-            <a href="#" class="navbar__logo">
-                <img src="img/nav-logo.png" />
-            </a>
-            <nav class="menu">
-                <a class="dropdown-trigger" onclick="myFunction()">ค่ายย่อย</a>
-                <a href="#hero">หน้าแรก</a>
-                <a href="#cd-timeline">กำหนดการ</a>
-                <a href="#contact">ติดต่อ</a>
-            </nav>
+			<a href="#" class="navbar__icon" id="navbar__icon"></a>
+			<a href="#" class="navbar__logo">
+			<img src="img/nav-logo.png" />
+			</a>
+			<nav class="menu">
+				<a class="dropdown-trigger" onclick="myFunction()">ค่ายย่อย</a>
+				<a href="#hero">หน้าแรก</a>
+				<a href="#cd-timeline">กำหนดการ</a>
+				<a href="#contact">ติดต่อ</a>
+			</nav>
 		</header>
-    	<div class="dropdown-content" id="myDropdown">
-        	<div class="row center-xs middle-xs">
-            	<div class="col-xs-2">
-            	    <a href="#app-sub"><img src="img/app-ico.svg" /><p>APPERSKY</p></a>
-            	</div>
-            	<div class="col-xs-2">
-            	    <a href="#"><img src="img/game-ico.svg"/><p>GAMEROFT</p></a>
-            	</div>
-            	<div class="col-xs-2">
-            	    <a href="#"><img src="img/nw-ico.svg"/><p>NETWORK DEFENDER</p></a>
-            	</div>
-            	<div class="col-xs-2">
-            	    <a href="#"><img src="img/iot-ico.svg"/><p>IOTECH</p></a>
-            	</div>
-            	<div class="col-xs-2">
-            	    <a href="#"><img src="img/data-ico.svg"/><p>DATACYBER</p></a>
-            	</div>
-        	</div>
-    	</div>
-        <div class="fullscreen hero row center-xs middle-xs" id="hero">
-            <canvas id="bg" class="molecules__wrapper">
-            </canvas>
+		<div class="dropdown-content" id="myDropdown">
+			<div class="row center-xs middle-xs">
+				<div class="col-xs-2">
+					<a href="#app-sub">
+						<img src="img/app-ico.svg" />
+						<p>APPERSKY</p>
+					</a>
+				</div>
+				<div class="col-xs-2">
+					<a href="#">
+						<img src="img/game-ico.svg"/>
+						<p>GAMEROFT</p>
+					</a>
+				</div>
+				<div class="col-xs-2">
+					<a href="#">
+						<img src="img/nw-ico.svg"/>
+						<p>NETWORK DEFENDER</p>
+					</a>
+				</div>
+				<div class="col-xs-2">
+					<a href="#">
+						<img src="img/iot-ico.svg"/>
+						<p>IOTECH</p>
+					</a>
+				</div>
+				<div class="col-xs-2">
+					<a href="#">
+						<img src="img/data-ico.svg"/>
+						<p>DATACYBER</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="fullscreen hero row center-xs middle-xs" id="hero">
+			<canvas id="bg" class="molecules__wrapper">
+			</canvas>
 			<div class="col-xs-12 col-sm-10 col-md-6" style="z-index=1;">
 				<div class="row">
 					<div class="col-xs-12">
 						<img src="img/skull.png" style="-webkit-filter: invert();" class="logo1"/>
 					</div>
-                    <div class="col-xs-12">
-                        <img src="img/camp_logo.gif" class="logo2"/>
-                    </div>
-                </div>
+					<div class="col-xs-12">
+						<img src="img/camp_logo.gif" class="logo2"/>
+					</div>
+				</div>
 				<div class="row cta-group">
 					<div class="col-xs-12 col-sm-12">
 						<a href="#" class="btn btn-full hero-btn">ลงทะเบียน</a>
 					</div>
-<!--
-					<div class="col-xs-12 col-sm-6 hero-btn">
-						<a href="#camp-stories" class="btn btn-full">รายละเอียดค่าย</a>
-					</div>         -->
+					<!--
+						<div class="col-xs-12 col-sm-6 hero-btn">
+							<a href="#camp-stories" class="btn btn-full">รายละเอียดค่าย</a>
+						</div>         -->
 				</div>
 			</div>
-        </div>
-        <div class="row center-xs middle-xs camp-stories stories-screen" id="camp-stories">
-        	<div class="col-xs-11 col-sm-10 col-md-8 col-lg-7 detail">
-        		<p>เมื่อเหล่าพี่เลี้ยงประจำผู้พิทักษ์ทั้งสี่องค์กรลับไอทีแคมป์ ได้ค้นพบความจริงที่น่าตกใจว่าค่ายอันสงบสุขของพวกเขาได้ถูกผู้ก่อการกบฎปล่อยไวรัสเข้ามาทำลายระบบความปลอดภัยจนเสียหาย เหล่าพี่เลี้ยงจึงต้องออกตามหาเหล่าผู้พิทักษ์ Appersky ปรมาจารย์แห่งแอพพลิเคชั่น, Gameroft ผู้พัฒนาแห่งเกม, NetworkDefender ผู้พิทักษ์แห่งเครือข่าย และ IOTech ผู้สร้างอุปกรณ์ล้ำสมัย มาผนึกกำลังกันเพื่อตามหาผู้ก่อการกบฎนี้ มาร่วมเป็นส่วนหนึ่งของสุดยอดผู้พิทักษ์องค์กรเพื่อหยุดยั้งการทำลายล้างได้ที่ ITCAMP_13</p>
-        	</div>
-        </div>
-        <div class="fullscreen cont s--inactive camp-stories" id="app-sub">
-            <!-- cont inner start -->
-            <div class="cont__inner">
-                <!-- el start -->
-                <div class="el">
-                    <div class="el__overflow">
-                        <div class="el__inner">
-                            <div class="el__bg"></div>
-                            <div class="el__preview-cont">
-                                <h2 class="el__heading">
-                                    Appersky
-                                </h2>
-                            </div>
-                            <div class="el__content">
-                                <div class="el__title">
-                                    Appersky
-                                </div>
-                                <div class="el__text">
-                                    ตามรอยปรมาจารย์แห่งแอพพลิเคชั่นกับ Appersky ค่ายที่จะพาน้องๆ เหล่าผู้กล้าไปร่วมกันสร้างแอพพลิเคชั่นที่ไม่เหมือนใครเพื่อมาปราบเหล่าผู้ก่อการกบฎโดยใช้โปรแกรม Microsoft Visual Studio บนระบบปฎิบัติการ Windows 10
-                                </div>
-                                <div class="el__close-btn"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- el end -->
-                <!-- el start -->
-                <div class="el">
-                    <div class="el__overflow">
-                        <div class="el__inner">
-                            <div class="el__bg"></div>
-                            <div class="el__preview-cont">
-                                <h2 class="el__heading">
-                                    Gameroft
-                                </h2>
-                            </div>
-                            <div class="el__content">
-                                <div class="el__title">
-                                    Gameroft
-                                </div>
-                                <div class="el__text">
-                                    ยืนหยัดเคียงข้างทำลายล้างไวรัสกับผู้พัฒนา Gamesoft แห่งโลกเกมเมอร์ ที่จะพาน้องฟินเวอร์ไปกับการสร้างเกมยอดฮิต ที่มีอาวุธลับเป็นโปรแกรม Construct2 โปรแกรมที่ใช้สุดจะง่ายแสนง่าย เพียงแค่คลิก ลาก และวาง
-                                </div>
-                                <div class="el__close-btn"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- el end -->
-                <!-- el start -->
-                <div class="el">
-                    <div class="el__overflow">
-                        <div class="el__inner">
-                            <div class="el__bg"></div>
-                            <div class="el__preview-cont">
-                                <h2 class="el__heading">
-                                    Network<br/>Defender
-                                </h2>
-                            </div>
-                            <div class="el__content">
-                                <div class="el__title">
-                                    NetworkDefender
-                                </div>
-                                <div class="el__text">
-                                    ร่วมปราบไวรัสกับ NetworkDefender ที่จะพาน้องๆ ผจญภัยไปบนระบบเครือข่าย ช่วยกันค้นหาและทำความเข้าใจความลับต่างๆ ของการทำงานบนโครงสร้างเครือข่ายที่ซับซ้อนกันอย่างง่ายๆ และยังได้ทดลองสร้างระบบจำลองอีกด้วย
-                                </div>
-                                <div class="el__close-btn"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- el end -->
-                <!-- el start -->
-                <div class="el">
-                    <div class="el__overflow">
-                        <div class="el__inner">
-                            <div class="el__bg"></div>
-                            <div class="el__preview-cont">
-                                <h2 class="el__heading">
-                                    IOTech
-                                </h2>
-                            </div>
-                            <div class="el__content">
-                                <div class="el__title">
-                                    IOTech
-                                </div>
-                                <div class="el__text">
-                                    เตรียมพร้อมรับมือไวรัสตัวร้ายไปกับ ผู้พิทักษ์แห่งการสรรค์สร้าง IOTech ที่พร้อมจะพาน้องๆไปรู้จักและสัมผัส Internet Of Things เทคโนโลยีสุดก้าวล้ำแห่งองค์กรลับไอทีแคมป์ ที่มีอาวุธที่ทรงพลานุภาพอย่าง Arduino รวมถึงเครื่องมือต่างๆ อีกมากมาย ไปลุยกันนนน!!!
-                                </div>
-                                <div class="el__close-btn"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- el end -->
-                <!-- el start -->
-                <div class="el">
-                    <div class="el__overflow">
-                        <div class="el__inner">
-                            <div class="el__bg"></div>
-                            <div class="el__preview-cont">
-                                <h2 class="el__heading">
-                                    DataCyber
-                                </h2>
-                            </div>
-                            <div class="el__content">
-                                <div class="el__title">
-                                    DataCyber
-                                </div>
-                                <div class="el__text">
-                                    มาแกะรอยการถูกล้วงความลับของข้อมูลไปกับ DataCyber ผู้พิทักษ์แห่งองค์กรลับไอทีแคมป์ที่จะพาน้องไปเรียนรู้เกี่ยวกับการนำข้อมูลมาทำสถิติ รวมทั้งวิธีนำข้อมูลเหล่านั้นมาใช้ให้เกิดประโยชน์สูงสุดกับองค์กรไอทีแคมป์ของเรา!
-                                </div>
-                                <div class="el__close-btn"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- el end -->
-            </div><!-- cont inner end -->
-        </div>
-        <div class="gallery">
-            <h1>บรรยากาศกิจกรรม</h1>
-        	<div class="container">
+		</div>
+		<div class="row center-xs middle-xs camp-stories stories-screen" id="camp-stories">
+			<div class="col-xs-11 col-sm-10 col-md-8 col-lg-7 detail">
+				<p>เมื่อเหล่าพี่เลี้ยงประจำผู้พิทักษ์ทั้งสี่องค์กรลับไอทีแคมป์ ได้ค้นพบความจริงที่น่าตกใจว่าค่ายอันสงบสุขของพวกเขาได้ถูกผู้ก่อการกบฎปล่อยไวรัสเข้ามาทำลายระบบความปลอดภัยจนเสียหาย เหล่าพี่เลี้ยงจึงต้องออกตามหาเหล่าผู้พิทักษ์ Appersky ปรมาจารย์แห่งแอพพลิเคชั่น, Gameroft ผู้พัฒนาแห่งเกม, NetworkDefender ผู้พิทักษ์แห่งเครือข่าย และ IOTech ผู้สร้างอุปกรณ์ล้ำสมัย มาผนึกกำลังกันเพื่อตามหาผู้ก่อการกบฎนี้ มาร่วมเป็นส่วนหนึ่งของสุดยอดผู้พิทักษ์องค์กรเพื่อหยุดยั้งการทำลายล้างได้ที่ ITCAMP_13</p>
+			</div>
+		</div>
+		<div class="fullscreen cont s--inactive camp-stories" id="app-sub">
+			<!-- cont inner start -->
+			<div class="cont__inner">
+				<!-- el start -->
+				<div class="el">
+					<div class="el__overflow">
+						<div class="el__inner">
+							<div class="el__bg"></div>
+							<div class="el__preview-cont">
+								<h2 class="el__heading">
+									Appersky
+								</h2>
+							</div>
+							<div class="el__content">
+								<div class="el__title">
+									Appersky
+								</div>
+								<div class="el__text">
+									ตามรอยปรมาจารย์แห่งแอพพลิเคชั่นกับ Appersky ค่ายที่จะพาน้องๆ เหล่าผู้กล้าไปร่วมกันสร้างแอพพลิเคชั่นที่ไม่เหมือนใครเพื่อมาปราบเหล่าผู้ก่อการกบฎโดยใช้โปรแกรม Microsoft Visual Studio บนระบบปฎิบัติการ Windows 10
+								</div>
+								<div class="el__close-btn"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- el end -->
+				<!-- el start -->
+				<div class="el">
+					<div class="el__overflow">
+						<div class="el__inner">
+							<div class="el__bg"></div>
+							<div class="el__preview-cont">
+								<h2 class="el__heading">
+									Gameroft
+								</h2>
+							</div>
+							<div class="el__content">
+								<div class="el__title">
+									Gameroft
+								</div>
+								<div class="el__text">
+									ยืนหยัดเคียงข้างทำลายล้างไวรัสกับผู้พัฒนา Gamesoft แห่งโลกเกมเมอร์ ที่จะพาน้องฟินเวอร์ไปกับการสร้างเกมยอดฮิต ที่มีอาวุธลับเป็นโปรแกรม Construct2 โปรแกรมที่ใช้สุดจะง่ายแสนง่าย เพียงแค่คลิก ลาก และวาง
+								</div>
+								<div class="el__close-btn"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- el end -->
+				<!-- el start -->
+				<div class="el">
+					<div class="el__overflow">
+						<div class="el__inner">
+							<div class="el__bg"></div>
+							<div class="el__preview-cont">
+								<h2 class="el__heading">
+									Network<br/>Defender
+								</h2>
+							</div>
+							<div class="el__content">
+								<div class="el__title">
+									NetworkDefender
+								</div>
+								<div class="el__text">
+									ร่วมปราบไวรัสกับ NetworkDefender ที่จะพาน้องๆ ผจญภัยไปบนระบบเครือข่าย ช่วยกันค้นหาและทำความเข้าใจความลับต่างๆ ของการทำงานบนโครงสร้างเครือข่ายที่ซับซ้อนกันอย่างง่ายๆ และยังได้ทดลองสร้างระบบจำลองอีกด้วย
+								</div>
+								<div class="el__close-btn"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- el end -->
+				<!-- el start -->
+				<div class="el">
+					<div class="el__overflow">
+						<div class="el__inner">
+							<div class="el__bg"></div>
+							<div class="el__preview-cont">
+								<h2 class="el__heading">
+									IOTech
+								</h2>
+							</div>
+							<div class="el__content">
+								<div class="el__title">
+									IOTech
+								</div>
+								<div class="el__text">
+									เตรียมพร้อมรับมือไวรัสตัวร้ายไปกับ ผู้พิทักษ์แห่งการสรรค์สร้าง IOTech ที่พร้อมจะพาน้องๆไปรู้จักและสัมผัส Internet Of Things เทคโนโลยีสุดก้าวล้ำแห่งองค์กรลับไอทีแคมป์ ที่มีอาวุธที่ทรงพลานุภาพอย่าง Arduino รวมถึงเครื่องมือต่างๆ อีกมากมาย ไปลุยกันนนน!!!
+								</div>
+								<div class="el__close-btn"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- el end -->
+				<!-- el start -->
+				<div class="el">
+					<div class="el__overflow">
+						<div class="el__inner">
+							<div class="el__bg"></div>
+							<div class="el__preview-cont">
+								<h2 class="el__heading">
+									DataCyber
+								</h2>
+							</div>
+							<div class="el__content">
+								<div class="el__title">
+									DataCyber
+								</div>
+								<div class="el__text">
+									มาแกะรอยการถูกล้วงความลับของข้อมูลไปกับ DataCyber ผู้พิทักษ์แห่งองค์กรลับไอทีแคมป์ที่จะพาน้องไปเรียนรู้เกี่ยวกับการนำข้อมูลมาทำสถิติ รวมทั้งวิธีนำข้อมูลเหล่านั้นมาใช้ให้เกิดประโยชน์สูงสุดกับองค์กรไอทีแคมป์ของเรา!
+								</div>
+								<div class="el__close-btn"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- el end -->
+			</div>
+			<!-- cont inner end -->
+		</div>
+		<div class="gallery">
+			<h1>บรรยากาศกิจกรรม</h1>
+			<div class="container">
 				<div id="gallery-owl" class="owl-carousel owl-theme">
 					<div class="item"><img class="lazyOwl" data-src="img/itcamp12-compressed/itcamp12-8.jpg"  alt="pic" /></div>
 					<div class="item"><img class="lazyOwl" data-src="img/itcamp12-compressed/itcamp12-3.jpg"  alt="pic" /></div>
 					<div class="item"><img class="lazyOwl" data-src="img/itcamp12-compressed/itcamp12-9.jpg"  alt="pic" /></div>
 					<div class="item"><img class="lazyOwl" data-src="img/itcamp12-compressed/itcamp12-1.jpg"  alt="pic" /></div>
 					<div class="item"><img class="lazyOwl" data-src="img/itcamp12-compressed/itcamp12-6.jpg"  alt="pic" /></div>
-                    <div class="item"><img class="lazyOwl" data-src="img/itcamp12-compressed/itcamp12-7.jpg"  alt="pic" /></div>
+					<div class="item"><img class="lazyOwl" data-src="img/itcamp12-compressed/itcamp12-7.jpg"  alt="pic" /></div>
 				</div>
 			</div>
 		</div>
-        <section id="cd-timeline">
-            <div class="cd-container">
-            <div class="cd-timeline-block">
-                <div class="cd-timeline-img cd-picture">
-                    <img src="img/timeline-1.png" alt="Picture">
-                </div>
-                <div class="cd-timeline-content">
-                    <h2>5 ก.ย. 2559</h2>
-                    <p>วันเปิดรับสมัคร</p>
-                    <span class="cd-date">5 ก.ย. 2559</span>
-                </div> <!-- cd-timeline-content -->
-            </div> <!-- cd-timeline-block -->
-            <div class="cd-timeline-block">
-                <div class="cd-timeline-img cd-movie">
-                    <img src="img/timeline-2.png" alt="Movie">
-                </div> <!-- cd-timeline-img -->
-                <div class="cd-timeline-content">
-                    <h2>19 ต.ค. 2559</h2>
-                    <p>ปิดรับสมัคร</p>
-                    <span class="cd-date">19 ต.ค. 2559</span>
-                </div> <!-- cd-timeline-content -->
-            </div> <!-- cd-timeline-block -->
-            <div class="cd-timeline-block">
-                <div class="cd-timeline-img cd-picture">
-                    <img src="img/timeline-3.png" alt="Picture">
-                </div> <!-- cd-timeline-img -->
-                <div class="cd-timeline-content">
-                    <h2>28 ต.ค. 2559</h2>
-                    <p>ประกาศผลและโอนเงินยืนยันสิทธิ์</p>
-                    <span class="cd-date">28 ต.ค. 2559</span>
-                </div> <!-- cd-timeline-content -->
-            </div> <!-- cd-timeline-block -->
-            <div class="cd-timeline-block">
-                <div class="cd-timeline-img cd-location">
-                    <img src="img/timeline-4.png" alt="Location">
-                </div> <!-- cd-timeline-img -->
-                <div class="cd-timeline-content">
-                    <h2>12 พ.ย. 2559</h2>
-                    <p>วันสุดท้ายของการโอนเงินยืนยันสิทธิ์</p>
-                    <span class="cd-date">12 พ.ย. 2559</span>
-                </div> <!-- cd-timeline-content -->
-            </div> <!-- cd-timeline-block -->
-            <div class="cd-timeline-block">
-                <div class="cd-timeline-img cd-location">
-                    <img src="img/timeline-5.png" alt="Location">
-                </div> <!-- cd-timeline-img -->
-                <div class="cd-timeline-content">
-                    <h2>10 - 13 ธ.ค. 2559</h2>
-                    <p>ค่าย ITCAMP 13</p>
-                    <span class="cd-date">10 - 13 ธ.ค. 2559</span>
-                </div> <!-- cd-timeline-content -->
-            </div> <!-- cd-timeline-block -->
-            </div>
-        </section> <!-- cd-timeline -->
-        <div class="container kamniyom">
-        	<div class="row">
-        		<h1>คำนิยม</h1>
-        		<div class="col-xs-12">
-        			<div class="kamniyom-box">
-        				<div class="kamniyom-text">
-        					<p>ค่าย "ไอทีแคมป์" ค่ายไอทีที่เปิดโอกาสให้ น้องๆ ได้เข้ามาเรียนรู้ สัมผัสบรรยากาศและสถานที่ภายในรั้วมหาวิทยาลัย และที่สำคัญคือได้มาค้นหาอนาคต มีหลายคนที่ผ่านค่ายนี้ไปแล้วค้นพบว่าตนเองชื่นชอบด้านเทคโนโลยีขนาดไหน ชอบสถานที่นี้หรือไม่ นอกจากจะได้ความรู้ความสนุกสนานและค้นหาตนเองแล้ว ยังได้พบเจอกับเพื่อนและพี่ใหม่และเกิดเป็นมิตรภาพใหม่ที่ไม่สามารถหาที่ใดได้ ขอฝากไอทีแคมป์ครั้งนี้ไว้ในใจของน้องๆ ด้วยนะครับ</p>
-        					<p class="small">นายวิชวิทย์ นิลสวัสดิ์<br/>ITCAMP 10 - ประธานค่าย<br/>ITCAMP 9, 11, 12 - พี่ค่าย<br/>ITCAMP8 - น้องค่าย Network plus plus</p>
-        					<p class="small">ปัจจุบัน Project Engineer บริษัท Advanced Information Technology PCL</p>
-						</div>
-        			</div>
-        			<div class="kamniyom-box">
-        				<div class="kamniyom-text">
-        					<p>ไอทีแคมป์คือค่ายที่เป็นจุดเริ่มต้นของความผูกพันธ์ที่พี่มีต่อคณะไอทีแห่งนี้ ทั้งสาระความรู้ที่ทำให้พี่ได้ค้นพบเส้นทางของตัวเองทางด้านเทคโนโลยี ซึ่งสำหรับใครที่มีพื้นฐานหรือชอบในด้านนี้อยู่แล้วก็จะได้มาพบเจอกับเพื่อนใหม่ๆ ที่สนใจในด้านเดียวกัน แต่สำหรับใครที่ยังหาตัวเองไม่เจอว่าชอบอะไรก็มาลองค้นหาตัวเองจากค่ายนี้ได้เช่นกัน นอกจากสาระความรู้แล้วก็ยังมีความสนุกสนานจากกิจกรรมต่างๆ รวมถึงการดูแลเอาใจใส่จากจากพี่ๆ ภายในคณะที่จะทำให้น้องรู้สึกเหมือนเป็นส่วนหนึ่งของครอบครัวไอทีแห่งนี้เลย แล้วน้องจะรู้ว่า 4 วัน 3 คืนนี้มันคุ้มจริงๆ จนไม่อยากกลับเลยล่ะ และนี่ก็คือความทรงจำของพี่กับค่ายนี้ที่อยากให้น้องๆ ได้ลองมาสัมผัสกันดู แล้วน้องจะไม่มีทางลืมมันได้เล๊ยยยย! #เสียงสู๊งง</p>
-        					<p class="small">นายธนวัฒน์ กุสูงเนิน<br>ITCAMP12 - ประธานค่าย<br>ITCAMP11 - พี่ค่าย<br>ITCAMP10 - น้องค่าย</p>
-						</div>
-        			</div>
-        			<div class="kamniyom-box">
-        				<div class="kamniyom-text">
-        					<p>ช่วงมัธยมปลายนั้นถือว่าเป็นช่วงหัวเลี้ยวหัวต่อของชีวิต สำหรับน้องๆ คนไหนที่ยังไม่รู้ว่าจะเรียนสายไหน หรือว่าอยากสัมผัสประสบการณ์จริง ค่าย ITCAMP นี้สามารถตอบโจทย์น้องสายคอมพิวเตอร์ได้เป็นอย่างดี ค่ายนี้ได้ทั้งความสนุก ความรู้ ให้น้องๆ ได้ค้นหาตัวเองและสัมผัสบรรยากาศคณะไอทีของเราจริงๆ ตัวพี่เองก็ได้เค้าค่ายในช่วงมัธยมปลายมาหลายค่าย และค่ายนี้เป็นหนึ่งในค่ายที่ประทับใจที่สุดที่เคยเข้ามาเลยทีเดียว ใครเป็นสายคอมพิวเตอร์พลาดไม่ได้เลยครับผม</p>
-        					<p class="small">นายพัชรพล จอกสมุทร<br/>ITCAMP12 - พี่ค่าย<br/>ITCAMP10 - น้องค่าย</p>
-						</div>
-        			</div>
-        		</div>
-        	</div>
-        </div>
-        <div class="faq">
-        	<h1>คำถามที่พบบ่อย</h1>
-        	<div class="container">
-        		<button class="faq-box" role="">
-        			<p>ค่ายนี้จัดขึ้นที่ไหน อย่างไร</p>
-        		</button>
-                <div class="faq-detail">
-                    <p>ค่ายนี้จัดที่คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง ตลอดระยะเวลา 4 วัน 3 คืน โดยที่น้องจะไม่ได้รับอนุญาตให้ออกจากบริเวณที่จัดกิจกรรม ยกเว้นในกรณีที่ติดธุระเร่งด่วน และมีผู้ปกครองมารับด้วยตนเอง การเดินทางมายังคณะเทคโนโลยีสารสนเทศ สามารถดูได้ที่เว็บไซต์ของคณะได้เลยนะครับ</p>
-                </div>
-        		<button class="faq-box">
-        			<p>มีค่าใช้จ่ายหรือไม่ จำนวนเท่าไหร่ และชำระตอนไหน สละสิทธิ์ได้เงินคืนหรือไม่</p>
-        		</button>
-                <div class="faq-detail">
-                    <p>มีค่าใช้จ่าย จำนวน 500 บาท โดยชำระตามเวลาที่กำหนด (6 - 21 พฤศจิกายน 2558) หากน้องคนใดจะสละสิทธิ์ สามารถกดปุ่มสละสิทธิ์ที่หน้าเว็บและขอให้น้องๆ คิดให้รอบคอบก่อนจะชำระเงิน เพราะหากน้องสละสิทธิ์จะไม่ได้รับเงินคืนครับ และหากโอนเงินไม่ทันภายในวันที่กำหนดจะถือว่าสละสิทธิ์นะครับ</p>
-                </div>
-        		<button class="faq-box">
-        			<p>ต้องพักค้างคืนที่ค่ายหรือเปล่า</p>
-        		</button>
-                <div class="faq-detail">
-                    <p>ใช่ครับ เพื่อให้น้องๆ สะดวกต่อการเข้าร่วมกิจกรรม น้องๆ จะได้นอนพักในห้องพักที่พี่ๆ จัดเตรียมไว้ให้ที่คณะ ซึ่งติดแอร์เย็นฉ่ำ สะดวกสบาย ง่ายต่อการทำกิจกรรมของน้องๆ และที่สำคัญ พี่ๆ จะดูแลน้องได้ตลอด 24 ชั่วโมงตลอดโครงการ น้องๆ สบายใจได้ครับ</p>
-                </div>
-        		<button class="faq-box">
-        			<p>สมัครมากกว่าหนึ่งค่ายย่อยหรือเปลี่ยนไปอยู่ค่ายอื่นได้หรือไม่</p>
-        		</button>
-                <div class="faq-detail">
-                    <p>ไม่สามารถสมัครได้ครับ ดังนั้นน้องๆ ควรจะตัดสินใจให้ชัดเจนว่าจะสมัครค่ายไหน เพราะช่วงที่มีการเรียนการสอน แต่ละค่ายจะจัดการเรียนการสอนแยกกันอย่างชัดเจน</p>
-                </div>
-        		<button class="faq-box">
-        			<p>จำเป็นต้องมีความรู้มาก่อนหรือไม่</p>
-        		</button>
-                <div class="faq-detail">
-                    <p>ไม่จำเป็นครับ ขอแค่เพียงน้องๆ มีความสนใจและใฝ่รู้ก็พอครับ ที่เหลือพี่ๆ จะเป็นคนช่วยสอนน้องๆ เอง</p>
-                </div>
-        		<button class="faq-box">
-        			<p>ค่ายรับระดับชั้นไหนบ้าง ปวช. สามารถสมัครได้หรือเปล่า</p>
-        		</button>
-                <div class="faq-detail">
-                    <p>ค่ายนี้จะรับเฉพาะน้องๆ ที่กำลังศึกษาอยู่ระดับชั้นมัธยมศึกษาตอนปลาย ทุกแผนการเรียน และ ปวช. เท่านั้นครับ</p>
-                </div>
-        		<button class="faq-box">
-        			<p>ค่าย IoT คืออะไร</p>
-        		</button>
-                <div class="faq-detail">
-                    <p>IoT (Internet of things) คือเทคโนโลยีที่เชื่อมทุกสิ่งทุกอย่างเข้าด้วยกันบนโลกอินเทอร์เน็ต ทำให้มนุษย์สามารถสั่งการ ควบคุมใช้งาน อุปกรณ์ต่างๆ ผ่านทางเครือข่ายอินเทอร์เน็ตได้ ตัวอย่างเช่น หากเราอยู่นอกบ้านแล้วอยากต้มน้ำร้อน เราไม่สามารถทำได้ แต่หากกาต้มน้ำเป็น IoT นั่นคือสามารถสั่งการควบคุมกาต้มน้ำผ่านอินเทอร์เน็ตได้ เช่น อุณหภูมิ เราก็สามารถสั่งให้กาต้มน้ำเพิ่มอุณหภูมิผ่านโทรศัพท์มือถือเพื่อทำให้น้ำเดือดได้ หรือกล่าวง่ายๆ IoT ก็คือการควบคุมอุปกรณ์ไฟฟ้าต่างๆ ผ่านอินเทอร์เน็ต หรือ อุปกรณ์ที่สามารถเชื่อมต่อผ่านอินเทอร์เน็ตได้ โดยในค่าย IoT น้องๆ จะได้ลองเขียนโปรแกรมควบคุมอุปกรณ์เหล่านี้โดยเชื่อมต่อผ่านอินเทอร์เน็ตกัน</p>
-                </div>
+		<section id="cd-timeline">
+			<div class="cd-container">
+				<div class="cd-timeline-block">
+					<div class="cd-timeline-img cd-picture">
+						<img src="img/timeline-1.png" alt="Picture">
+					</div>
+					<div class="cd-timeline-content">
+						<h2>5 ก.ย. 2559</h2>
+						<p>วันเปิดรับสมัคร</p>
+						<span class="cd-date">5 ก.ย. 2559</span>
+					</div>
+					<!-- cd-timeline-content -->
+				</div>
+				<!-- cd-timeline-block -->
+				<div class="cd-timeline-block">
+					<div class="cd-timeline-img cd-movie">
+						<img src="img/timeline-2.png" alt="Movie">
+					</div>
+					<!-- cd-timeline-img -->
+					<div class="cd-timeline-content">
+						<h2>19 ต.ค. 2559</h2>
+						<p>ปิดรับสมัคร</p>
+						<span class="cd-date">19 ต.ค. 2559</span>
+					</div>
+					<!-- cd-timeline-content -->
+				</div>
+				<!-- cd-timeline-block -->
+				<div class="cd-timeline-block">
+					<div class="cd-timeline-img cd-picture">
+						<img src="img/timeline-3.png" alt="Picture">
+					</div>
+					<!-- cd-timeline-img -->
+					<div class="cd-timeline-content">
+						<h2>28 ต.ค. 2559</h2>
+						<p>ประกาศผลและโอนเงินยืนยันสิทธิ์</p>
+						<span class="cd-date">28 ต.ค. 2559</span>
+					</div>
+					<!-- cd-timeline-content -->
+				</div>
+				<!-- cd-timeline-block -->
+				<div class="cd-timeline-block">
+					<div class="cd-timeline-img cd-location">
+						<img src="img/timeline-4.png" alt="Location">
+					</div>
+					<!-- cd-timeline-img -->
+					<div class="cd-timeline-content">
+						<h2>12 พ.ย. 2559</h2>
+						<p>วันสุดท้ายของการโอนเงินยืนยันสิทธิ์</p>
+						<span class="cd-date">12 พ.ย. 2559</span>
+					</div>
+					<!-- cd-timeline-content -->
+				</div>
+				<!-- cd-timeline-block -->
+				<div class="cd-timeline-block">
+					<div class="cd-timeline-img cd-location">
+						<img src="img/timeline-5.png" alt="Location">
+					</div>
+					<!-- cd-timeline-img -->
+					<div class="cd-timeline-content">
+						<h2>10 - 13 ธ.ค. 2559</h2>
+						<p>ค่าย ITCAMP 13</p>
+						<span class="cd-date">10 - 13 ธ.ค. 2559</span>
+					</div>
+					<!-- cd-timeline-content -->
+				</div>
+				<!-- cd-timeline-block -->
 			</div>
-        </div>
-        <div class="footer" id="contact">
-            <div class="row center-xs">
-                <div class="col-xs-12 col-md-4">
-                    <h1>ติดต่อ</h1>
-                    <div class="row contact">
-                        <div class="col-xs-6">
-                            <p>P' Fah</p>
-                            <p>081-234-5678</p>
-                        </div>
-                        <div class="col-xs-6">
-                            <p>P' Shareef</p>
-                            <p>081-585-6504</p>
-                        </div>
-                    </div>
-                    <a href="https://facebook.com/itcampKMITL" class="btn btn-full">Facebook @itcampKMITL</a>
-                    <a href="https://twitter.com/@ITCAMP" class="btn btn-full">Twitter @ITCAMP</a>
-                    <a href="mailto:itcamp.it.kmitl@gmail.com" class="btn btn-full">Email: itcamp.it.kmitl@gmail.com</a>
-                </div>
-            </div>
-        </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-        <script src="js/particler.min.js"></script>
-        <script src="js/autohide_nav.js"></script>
-        <script src="js/camp_trigger.js"></script>
-        <script src="js/nav_bg.js"></script>
-        <script defer src="js/owl.carousel.js"></script>
-        <script src="js/subcamps.js"></script>
-        <script src="js\smoothscroll.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function(){
-                $("button.faq-box").click(function(){
-                    $(".faq-detail").removeClass("show");
-                    $(this).next().toggleClass("show");
-                });
-            });
-        </script>
-        <script type="text/javascript">
-           $(document).ready(function() {
-			   $("#gallery-owl").owlCarousel({
-				   navigation : true, // Show next and prev buttons
-				   items : 2,
-				   slideSpeed : 300,
-				   paginationSpeed : 400,
-				   lazyLoad: true
-			   });
-		   });
-        </script>
-    </body>
+		</section>
+		<!-- cd-timeline -->
+		<div class="container kamniyom">
+			<div class="row">
+				<h1>คำนิยม</h1>
+				<div class="col-xs-12">
+					<div id="identity-holder">
+						<img src="img/table.png" id="overlay" />
+						<!-- Where the image goes -->
+						<div id="app">
+							<span id="name">Profiler_App</span>
+							<span id="ver">v0.3xx(beta)</span>
+						</div>
+						<div id="img">
+							<img src="img/owl.png" />
+							<div id="topleft-arrow"></div>
+							<div id="botright-arrow"></div>
+						</div>
+						<div id="flavour">
+							<div id="primary"></div>
+							<div id="secondary"></div>
+						</div>
+						<!-- Image ends here -->
+						<!-- Where the stats goes -->
+						<div id="name">
+							<span class="text-bg"></span>
+							<span class="text"></span>
+						</div>
+						<div id="interest">
+							<div id="arrow"></div>
+							<span class="text-bg"></span>
+							<span class="text"></span>
+						</div>
+						<div id="stats">
+							<div class="stats-desc">
+								<span class="text-bg-invert">Age: ??</span>
+								<span class="text-invert">Age: ??</span>
+							</div>
+							<div class="stats-desc">
+								<span class="text-bg-invert">Occupation: Being an Owl what did you expect?</span>
+								<span class="text-invert">Occupation: Being an Owl what did you expect?</span>
+							</div>
+							<div class="stats-desc">
+								<span class="text-bg-invert">Interests: Owling... I guess</span>
+								<span class="text-invert">Interests: Owling... I guess</span>
+							</div>
+						</div>
+						<!-- stats end here-->
+					</div>
+					<div id="instuctions">Click to reanimate</div>
+				</div>
+			</div>
+		</div>
+		<div class="faq">
+			<h1>คำถามที่พบบ่อย</h1>
+			<div class="container">
+				<button class="faq-box" role="">
+					<p>ค่ายนี้จัดขึ้นที่ไหน อย่างไร</p>
+				</button>
+				<div class="faq-detail">
+					<p>ค่ายนี้จัดที่คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง ตลอดระยะเวลา 4 วัน 3 คืน โดยที่น้องจะไม่ได้รับอนุญาตให้ออกจากบริเวณที่จัดกิจกรรม ยกเว้นในกรณีที่ติดธุระเร่งด่วน และมีผู้ปกครองมารับด้วยตนเอง การเดินทางมายังคณะเทคโนโลยีสารสนเทศ สามารถดูได้ที่เว็บไซต์ของคณะได้เลยนะครับ</p>
+				</div>
+				<button class="faq-box">
+					<p>มีค่าใช้จ่ายหรือไม่ จำนวนเท่าไหร่ และชำระตอนไหน สละสิทธิ์ได้เงินคืนหรือไม่</p>
+				</button>
+				<div class="faq-detail">
+					<p>มีค่าใช้จ่าย จำนวน 500 บาท โดยชำระตามเวลาที่กำหนด (6 - 21 พฤศจิกายน 2558) หากน้องคนใดจะสละสิทธิ์ สามารถกดปุ่มสละสิทธิ์ที่หน้าเว็บและขอให้น้องๆ คิดให้รอบคอบก่อนจะชำระเงิน เพราะหากน้องสละสิทธิ์จะไม่ได้รับเงินคืนครับ และหากโอนเงินไม่ทันภายในวันที่กำหนดจะถือว่าสละสิทธิ์นะครับ</p>
+				</div>
+				<button class="faq-box">
+					<p>ต้องพักค้างคืนที่ค่ายหรือเปล่า</p>
+				</button>
+				<div class="faq-detail">
+					<p>ใช่ครับ เพื่อให้น้องๆ สะดวกต่อการเข้าร่วมกิจกรรม น้องๆ จะได้นอนพักในห้องพักที่พี่ๆ จัดเตรียมไว้ให้ที่คณะ ซึ่งติดแอร์เย็นฉ่ำ สะดวกสบาย ง่ายต่อการทำกิจกรรมของน้องๆ และที่สำคัญ พี่ๆ จะดูแลน้องได้ตลอด 24 ชั่วโมงตลอดโครงการ น้องๆ สบายใจได้ครับ</p>
+				</div>
+				<button class="faq-box">
+					<p>สมัครมากกว่าหนึ่งค่ายย่อยหรือเปลี่ยนไปอยู่ค่ายอื่นได้หรือไม่</p>
+				</button>
+				<div class="faq-detail">
+					<p>ไม่สามารถสมัครได้ครับ ดังนั้นน้องๆ ควรจะตัดสินใจให้ชัดเจนว่าจะสมัครค่ายไหน เพราะช่วงที่มีการเรียนการสอน แต่ละค่ายจะจัดการเรียนการสอนแยกกันอย่างชัดเจน</p>
+				</div>
+				<button class="faq-box">
+					<p>จำเป็นต้องมีความรู้มาก่อนหรือไม่</p>
+				</button>
+				<div class="faq-detail">
+					<p>ไม่จำเป็นครับ ขอแค่เพียงน้องๆ มีความสนใจและใฝ่รู้ก็พอครับ ที่เหลือพี่ๆ จะเป็นคนช่วยสอนน้องๆ เอง</p>
+				</div>
+				<button class="faq-box">
+					<p>ค่ายรับระดับชั้นไหนบ้าง ปวช. สามารถสมัครได้หรือเปล่า</p>
+				</button>
+				<div class="faq-detail">
+					<p>ค่ายนี้จะรับเฉพาะน้องๆ ที่กำลังศึกษาอยู่ระดับชั้นมัธยมศึกษาตอนปลาย ทุกแผนการเรียน และ ปวช. เท่านั้นครับ</p>
+				</div>
+				<button class="faq-box">
+					<p>ค่าย IoT คืออะไร</p>
+				</button>
+				<div class="faq-detail">
+					<p>IoT (Internet of things) คือเทคโนโลยีที่เชื่อมทุกสิ่งทุกอย่างเข้าด้วยกันบนโลกอินเทอร์เน็ต ทำให้มนุษย์สามารถสั่งการ ควบคุมใช้งาน อุปกรณ์ต่างๆ ผ่านทางเครือข่ายอินเทอร์เน็ตได้ ตัวอย่างเช่น หากเราอยู่นอกบ้านแล้วอยากต้มน้ำร้อน เราไม่สามารถทำได้ แต่หากกาต้มน้ำเป็น IoT นั่นคือสามารถสั่งการควบคุมกาต้มน้ำผ่านอินเทอร์เน็ตได้ เช่น อุณหภูมิ เราก็สามารถสั่งให้กาต้มน้ำเพิ่มอุณหภูมิผ่านโทรศัพท์มือถือเพื่อทำให้น้ำเดือดได้ หรือกล่าวง่ายๆ IoT ก็คือการควบคุมอุปกรณ์ไฟฟ้าต่างๆ ผ่านอินเทอร์เน็ต หรือ อุปกรณ์ที่สามารถเชื่อมต่อผ่านอินเทอร์เน็ตได้ โดยในค่าย IoT น้องๆ จะได้ลองเขียนโปรแกรมควบคุมอุปกรณ์เหล่านี้โดยเชื่อมต่อผ่านอินเทอร์เน็ตกัน</p>
+				</div>
+			</div>
+		</div>
+		<div class="footer" id="contact">
+			<div class="row center-xs">
+				<div class="col-xs-12 col-md-4">
+					<h1>ติดต่อ</h1>
+					<div class="row contact">
+						<div class="col-xs-6">
+							<p>P' Fah</p>
+							<p>081-234-5678</p>
+						</div>
+						<div class="col-xs-6">
+							<p>P' Shareef</p>
+							<p>081-585-6504</p>
+						</div>
+					</div>
+					<a href="https://facebook.com/itcampKMITL" class="btn btn-full">Facebook @itcampKMITL</a>
+					<a href="https://twitter.com/@ITCAMP" class="btn btn-full">Twitter @ITCAMP</a>
+					<a href="mailto:itcamp.it.kmitl@gmail.com" class="btn btn-full">Email: itcamp.it.kmitl@gmail.com</a>
+				</div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="js/particler.min.js"></script>
+		<script src="js/autohide_nav.js"></script>
+		<script src="js/camp_trigger.js"></script>
+		<script src="js/nav_bg.js"></script>
+		<script defer src="js/owl.carousel.js"></script>
+		<script src="js/subcamps.js"></script>
+		<script src="js\smoothscroll.js"></script>
+		<script src="js/kamniyom.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+			    $("button.faq-box").click(function(){
+			        $(".faq-detail").removeClass("show");
+			        $(this).next().toggleClass("show");
+			    });
+			});
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+			$("#gallery-owl").owlCarousel({
+			navigation : true, // Show next and prev buttons
+			items : 2,
+			slideSpeed : 300,
+			paginationSpeed : 400,
+			lazyLoad: true
+			});
+			});
+		</script>
+	</body>
 </html>
