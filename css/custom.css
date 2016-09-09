@@ -188,14 +188,6 @@ h1.reg-title {
     -webkit-filter: blur(50%);
     filter: blur(50%);
 }
-.logo1{
-    max-width: 250px;
-    width: 100%;
-}
-.logo2{
-	width: 100%;
-    
-}
 .cta-group {
 	margin-top: 30px;
 }
@@ -625,5 +617,13 @@ input[type="text"]:focus, input[type="date"]:focus, input[type="email"]:focus, i
 	}
 	.kamniyom-box:nth-child(3) {
 		min-height: 570px;
+	}
+}
+@media screen and (max-height: 665px) {
+	.fullscreen {
+		height: 600px;
+	}
+	canvas#bg {
+		height: 600px;
 	}
 }
