@@ -187,14 +187,6 @@ h1.reg-title {
     -webkit-filter: blur(50%);
     filter: blur(50%);
 }
-.logo1{
-    max-width: 250px;
-    width: 100%;
-}
-.logo2{
-	width: 100%;
-    
-}
 .cta-group {
 	margin-top: 30px;
 }
