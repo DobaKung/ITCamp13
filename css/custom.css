@@ -618,3 +618,11 @@ input[type="text"]:focus, input[type="date"]:focus, input[type="email"]:focus, i
 		min-height: 570px;
 	}
 }
+@media screen and (max-height: 665px) {
+	.fullscreen {
+		height: 600px;
+	}
+	canvas#bg {
+		height: 600px;
+	}
+}
